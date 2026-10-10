@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://03fm3e0ufkld"
-path="res://.godot/imported/Rust_blocks.png-faad8109c1a65001a3aefbbe730cb6a2.ctex"
+uid="uid://r3qpmwph3vvs"
+path="res://.godot/imported/Brickssmooth_blocks_update.png-74bf7caf7a92bcd6ea1d333a256d6f79.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Rust_blocks.png"
-dest_files=["res://.godot/imported/Rust_blocks.png-faad8109c1a65001a3aefbbe730cb6a2.ctex"]
+source_file="res://assets/Tile Sets/Brickssmooth_blocks_update.png"
+dest_files=["res://.godot/imported/Brickssmooth_blocks_update.png-74bf7caf7a92bcd6ea1d333a256d6f79.ctex"]
 
 [params]
 

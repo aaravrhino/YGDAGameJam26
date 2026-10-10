@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://r3qpmwph3vvs"
-path="res://.godot/imported/Brickssmooth_blocks_update.png-db0bf961823c40b7b53388afdc98f093.ctex"
+uid="uid://cugiibwl0ri24"
+path="res://.godot/imported/1xpilars.png-ffb9b97306a711d767f11b2e2373a7db.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Brickssmooth_blocks_update.png"
-dest_files=["res://.godot/imported/Brickssmooth_blocks_update.png-db0bf961823c40b7b53388afdc98f093.ctex"]
+source_file="res://assets/Tile Sets/1xpilars.png"
+dest_files=["res://.godot/imported/1xpilars.png-ffb9b97306a711d767f11b2e2373a7db.ctex"]
 
 [params]
 

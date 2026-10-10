@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://deo06k16jij14"
-path="res://.godot/imported/tilemap_placeholder.png-641dd1960852a78bafd6b88cc202057d.ctex"
+uid="uid://jvhkeic7lh1t"
+path="res://.godot/imported/Pilars.png-15306e7d71537acbf67aba93098792e0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tilemap_placeholder.png"
-dest_files=["res://.godot/imported/tilemap_placeholder.png-641dd1960852a78bafd6b88cc202057d.ctex"]
+source_file="res://assets/Tile Sets/Pilars.png"
+dest_files=["res://.godot/imported/Pilars.png-15306e7d71537acbf67aba93098792e0.ctex"]
 
 [params]
 

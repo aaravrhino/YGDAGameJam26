@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cha1ekc7wfgp4"
-path="res://.godot/imported/Smooth_blocks.png-efe7599ff5dcee027b865602f6a47462.ctex"
+uid="uid://b2gqt5yd7ynvv"
+path="res://.godot/imported/player_placeholder.png-86c42da7563e4ed0bb81e11e47cca80f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Smooth_blocks.png"
-dest_files=["res://.godot/imported/Smooth_blocks.png-efe7599ff5dcee027b865602f6a47462.ctex"]
+source_file="res://assets/Player/player_placeholder.png"
+dest_files=["res://.godot/imported/player_placeholder.png-86c42da7563e4ed0bb81e11e47cca80f.ctex"]
 
 [params]
 
