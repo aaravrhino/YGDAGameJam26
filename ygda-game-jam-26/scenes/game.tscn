@@ -2,7 +2,6 @@
 
 [ext_resource type="PackedScene" uid="uid://cn8dj32v117le" path="res://scenes/Levels/level_1.tscn" id="1_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://b6e0u2i4t25u3" path="res://scenes/player.tscn" id="2_yqjtg"]
-[ext_resource type="PackedScene" uid="uid://djuncdvgug2jg" path="res://scenes/button.tscn" id="3_lnu2h"]
 
 [node name="game" type="Node2D" unique_id=1353156351]
 
@@ -10,7 +9,3 @@
 
 [node name="player" parent="." unique_id=1200693243 instance=ExtResource("2_yqjtg")]
 position = Vector2(-1, 0)
-
-[node name="button" parent="." unique_id=1420165817 node_paths=PackedStringArray("level") instance=ExtResource("3_lnu2h")]
-position = Vector2(40, 8)
-level = NodePath("../Level 1")
