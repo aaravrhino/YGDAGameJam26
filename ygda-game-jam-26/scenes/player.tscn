@@ -13,6 +13,8 @@ script = ExtResource("1_g2els")
 texture = ExtResource("1_3vyb7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=417975661]
+physics_interpolation_mode = 1
 shape = SubResource("RectangleShape2D_g2els")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1940411388]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=564217212]
+zoom = Vector2(2, 2)
