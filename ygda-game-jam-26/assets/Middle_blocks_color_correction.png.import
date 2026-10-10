@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dxwnsrjtxpvhf"
-path="res://.godot/imported/Tileset_WIP.png-aa76b1c9bc72907ab8b51cb21d5e51de.ctex"
+uid="uid://b4tpb7vyfl06w"
+path="res://.godot/imported/Middle_blocks_color_correction.png-2c6e42e41247662532ed1ed37acfa9a1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tileset_WIP.png"
-dest_files=["res://.godot/imported/Tileset_WIP.png-aa76b1c9bc72907ab8b51cb21d5e51de.ctex"]
+source_file="res://assets/Middle_blocks_color_correction.png"
+dest_files=["res://.godot/imported/Middle_blocks_color_correction.png-2c6e42e41247662532ed1ed37acfa9a1.ctex"]
 
 [params]
 

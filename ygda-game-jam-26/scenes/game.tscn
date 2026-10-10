@@ -6,6 +6,6 @@
 [node name="game" type="Node2D" unique_id=1353156351]
 
 [node name="player" parent="." unique_id=1200693243 instance=ExtResource("2_yqjtg")]
-position = Vector2(-50, -42)
+position = Vector2(-1, 0)
 
 [node name="Level 1" parent="." unique_id=1680909377 instance=ExtResource("1_yqjtg")]
