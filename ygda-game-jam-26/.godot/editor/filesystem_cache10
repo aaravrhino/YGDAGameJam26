@@ -1,8 +1,8 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1791670772
+::res://::1791728206
 icon.svg::CompressedTexture2D::3733404264002698079::1791646120::1791646632::1::::<><><>0<>0<>2ee56acb9f31551d2379908d1b8efd28<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://assets/::1791670769
-::res://assets/Interactables/::1791670769
+::res://assets/Interactables/::1791670783
 pixil-frame-0_21.png::CompressedTexture2D::3880366372883346478::1791670765::1791670783::1::::<><><>0<>0<>b3977911ad224cfb2100c192066709f3<>res://.godot/imported/pixil-frame-0_21.png-ad1948b6e665d8d9bff331d40bc93516.ctex::
 pixil-frame-0_22.png::CompressedTexture2D::4690063414739599804::1791665619::1791665886::1::::<><><>0<>0<>d04bd818328352ad3f500f8c45a472cc<>res://.godot/imported/pixil-frame-0_22.png-222bc8d020fbac655525acaacd109a80.ctex::
 ::res://assets/Player/::1791667126
@@ -10,22 +10,24 @@ player_placeholder.png::CompressedTexture2D::4294912743368628915::1791646120::17
 ::res://assets/SFX/::1791665708
 rockhit.mp3::AudioStreamMP3::5793209958158867570::1791665628::1791665698::1::::<><><>0<>0<>93fe067556a9a937f8fee00a9920b128<>res://.godot/imported/rockhit.mp3-8221dcb2b6dc6e5a167623eb5be0a0f1.mp3str::
 rockslide.mp3::AudioStreamMP3::3369123521836956946::1791665632::1791665701::1::::<><><>0<>0<>74a0280e955940373735546c7881d6e6<>res://.godot/imported/rockslide.mp3-21c4048066f8db48fb41c8339baed8d3.mp3str::
-::res://assets/Tile Sets/::1791667146
+::res://assets/Tile Sets/::1791728381
 1xpilars.png::CompressedTexture2D::6189504616007503051::1791658455::1791665662::1::::<><><>0<>0<>57571075e6eecb7e85a37c2e7f3b8f4e<>res://.godot/imported/1xpilars.png-ffb9b97306a711d767f11b2e2373a7db.ctex::
 background1.png::CompressedTexture2D::6329447771584690175::1791665612::1791666643::1::::<><><>0<>0<>bf80afe3f120bfded7755fa809910e94<>res://.godot/imported/background1.png-c43972afbf011bba4c535cdb1f951beb.ctex::
 Brickssmooth_blocks_update.png::CompressedTexture2D::1252011842710971232::1791656332::1791665667::1::::<><><>0<>0<>2db488cf4a3a9ae3eb5b1cb3ac39b296<>res://.godot/imported/Brickssmooth_blocks_update.png-74bf7caf7a92bcd6ea1d333a256d6f79.ctex::
 Middle_blocks_color_correction.png::CompressedTexture2D::4462034581494269312::1791657666::1791665670::1::::<><><>0<>0<>5e0ec2d91fa4a6d2bed7f382ad563ebf<>res://.godot/imported/Middle_blocks_color_correction.png-c10067e1e93a99bc05dc37a55ce11e96.ctex::
 Pilars.png::CompressedTexture2D::675494625051871803::1791655428::1791665671::1::::<><><>0<>0<>9cbf2cc437ea1d822fa89273784495ed<>res://.godot/imported/Pilars.png-15306e7d71537acbf67aba93098792e0.ctex::
 pipes.png::CompressedTexture2D::6048482634370506602::1791667106::1791667142::1::::<><><>0<>0<>44fc33c4982b247632da5595f406a784<>res://.godot/imported/pipes.png-0e3a66cb1d2021e0285347272aa8ae45.ctex::
+pixil-frame-0_31.png::CompressedTexture2D::5443240151866473239::1791728381::1791728381::1::::<><><>0<>0<>1843ce19374173db673912a1d4c968f7<>res://.godot/imported/pixil-frame-0_31.png-8a5876d4d9dec71ad187ef4add13c58d.ctex::
 Rust_blocks.png::CompressedTexture2D::1812850160551016873::1791655436::1791665676::1::::<><><>0<>0<>e4ce693c59899d19b33a0d36842e3ca8<>res://.godot/imported/Rust_blocks.png-d214cc0ec0f02b473f2197a292ead3dc.ctex::
 Smooth_blocks.png::CompressedTexture2D::5265749587646623675::1791655432::1791665679::1::::<><><>0<>0<>c8db46624810d91be5307eccd79cbbb7<>res://.godot/imported/Smooth_blocks.png-c7da2bfb131079f7e7c1f2531978874e.ctex::
 tilemap_placeholder.png::CompressedTexture2D::7470492565437750117::1791646120::1791665710::1::::<><><>0<>0<>89ca1759fc05cbab65ca1e34fdfca86f<>res://.godot/imported/tilemap_placeholder.png-9b66e4b273ae4ecd6961a25a3dae61cc.ctex::
-::res://scenes/::1791670772
-game.tscn::PackedScene::1770487665511655964::1791670765::0::1::::<><><>0<>0<><>::uid://cn8dj32v117le::::res://scenes/Levels/level_1.tscn<>uid://b6e0u2i4t25u3::::res://scenes/player.tscn
-level_1.tscn::PackedScene::6594413271371133414::1791670765::0::1::::<><><>0<>0<><>::
-player.tscn::PackedScene::4572087420018607076::1791670765::0::1::::<><><>0<>0<><>::uid://b2gqt5yd7ynvv::::res://assets/Player/player_placeholder.png<>uid://b37mk0qnp2yqq::::res://scripts/player.gd
-::res://scenes/Levels/::1791670772
-level_1.tscn::PackedScene::5753620537041510346::1791670765::0::1::::<><><>0<>0<><>::uid://deo06k16jij14::::res://assets/Tile Sets/tilemap_placeholder.png<>uid://03fm3e0ufkld::::res://assets/Tile Sets/Rust_blocks.png<>uid://csf6vi3sq3neo::::res://assets/Tile Sets/pipes.png<>uid://jvhkeic7lh1t::::res://assets/Tile Sets/Pilars.png<>uid://cugiibwl0ri24::::res://assets/Tile Sets/1xpilars.png<>uid://cha1ekc7wfgp4::::res://assets/Tile Sets/Smooth_blocks.png<>uid://r3qpmwph3vvs::::res://assets/Tile Sets/Brickssmooth_blocks_update.png<>uid://b4tpb7vyfl06w::::res://assets/Tile Sets/Middle_blocks_color_correction.png<>uid://cri0x14rqdnim::::res://scripts/level_1.gd<>uid://boaa8b3ffutje::::res://assets/SFX/rockslide.mp3<>uid://cosjk61wdvff3::::res://assets/SFX/rockhit.mp3<>uid://cwgbcyspgknjj::::res://assets/Tile Sets/background1.png
+::res://scenes/::1791728206
+game.tscn::PackedScene::1770487665511655964::1791671744::0::1::::<><><>0<>0<><>::uid://cn8dj32v117le::::res://scenes/Levels/level_1.tscn<>uid://b6e0u2i4t25u3::::res://scenes/player.tscn
+level_1.tscn::PackedScene::6594413271371133414::1791670783::0::1::::<><><>0<>0<><>::
+player.tscn::PackedScene::4572087420018607076::1791728079::0::1::::<><><>0<>0<><>::uid://b2gqt5yd7ynvv::::res://assets/Player/player_placeholder.png<>uid://b37mk0qnp2yqq::::res://scripts/player.gd
+button1.tscn::PackedScene::1083387990500336025::1791671514::0::1::::<><><>0<>0<><>::uid://bvjxcjyrtivjy::::res://assets/Interactables/pixil-frame-0_21.png<>uid://b725wob0j81vs::::res://assets/Interactables/pixil-frame-0_22.png
+::res://scenes/Levels/::1791728227
+level_1.tscn::PackedScene::5753620537041510346::1791728227::0::1::::<><><>0<>0<><>::uid://deo06k16jij14::::res://assets/Tile Sets/tilemap_placeholder.png<>uid://03fm3e0ufkld::::res://assets/Tile Sets/Rust_blocks.png<>uid://csf6vi3sq3neo::::res://assets/Tile Sets/pipes.png<>uid://jvhkeic7lh1t::::res://assets/Tile Sets/Pilars.png<>uid://cugiibwl0ri24::::res://assets/Tile Sets/1xpilars.png<>uid://cha1ekc7wfgp4::::res://assets/Tile Sets/Smooth_blocks.png<>uid://r3qpmwph3vvs::::res://assets/Tile Sets/Brickssmooth_blocks_update.png<>uid://b4tpb7vyfl06w::::res://assets/Tile Sets/Middle_blocks_color_correction.png<>uid://cri0x14rqdnim::::res://scripts/level_1.gd<>uid://boaa8b3ffutje::::res://assets/SFX/rockslide.mp3<>uid://cosjk61wdvff3::::res://assets/SFX/rockhit.mp3<>uid://cwgbcyspgknjj::::res://assets/Tile Sets/background1.png
 ::res://scripts/::1791670772
 level_1.gd::GDScript::5984127140544553672::1791670765::0::1::::<>TileMapLayer<><>0<>0<><>::
 player.gd::GDScript::4418516193952586488::1791667652::0::1::::<>CharacterBody2D<><>0<>0<><>::
