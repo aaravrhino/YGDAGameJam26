@@ -1,7 +1,10 @@
+Area2D
+CollisionShape2D
+TextureButton
+Sprite2D
 AudioStreamPlayer
 AudioStreamPlayer2D
 TileMapLayer
 Camera2D
-CollisionShape2D
 CharacterBody2D
 TileMap

@@ -218,9 +218,9 @@ script = ExtResource("8_15mv3")
 
 [node name="rockslide" type="AudioStreamPlayer" parent="TileMapLayer" unique_id=1617724835]
 stream = ExtResource("9_xxpsm")
-volume_db = -15.0
+volume_db = -10.0
 
 [node name="rockhit" type="AudioStreamPlayer" parent="TileMapLayer" unique_id=989553324]
 stream = ExtResource("10_j85eu")
-volume_db = -20.0
+volume_db = -15.0
 pitch_scale = 1.8
