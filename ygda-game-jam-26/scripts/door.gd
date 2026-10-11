@@ -1,6 +1,7 @@
 extends Area2D
 
 @onready var Anime : AnimatedSprite2D = $AnimatedSprite2D
+@onready var door_sfx: AudioStreamPlayer = $doorsound
 var player_can_interact = false
 var door_opened = false
 
@@ -16,6 +17,9 @@ func _on_body_entered(body: Node2D) -> void:
 		door_opened = true
 		var tween = get_tree().create_tween()
 		tween.tween_property(body, "global_position", global_position, 6)
+		Spin.in_door = true
+		door_sfx.play()
 		tween.tween_property(body, "global_position", global_position, 1)
 		await get_tree().create_timer(7).timeout
+		Spin.in_door = false
 		get_tree().reload_current_scene()
