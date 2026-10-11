@@ -32,7 +32,7 @@
 [ext_resource type="Texture2D" uid="uid://ct7cwwlpnful3" path="res://assets/Door/pixilart-frames (2)/pixil-frame-28.png" id="29_byi8a"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tv3bi"]
-size = Vector2(16, 16)
+size = Vector2(30, 30)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_tv3bi"]
 animations = [{
@@ -132,7 +132,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("29_byi8a")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"open",
 "speed": 5.0
 }]
@@ -146,7 +146,10 @@ script = ExtResource("1_j5bs6")
 shape = SubResource("RectangleShape2D_tv3bi")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=39474084]
+position = Vector2(-2.2737368e-13, -2.2737368e-13)
+scale = Vector2(1.9375, 1.9375)
 sprite_frames = SubResource("SpriteFrames_tv3bi")
-animation = &"open"
+animation = &"idle"
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
