@@ -1,18 +1,66 @@
 [gd_scene format=3 uid="uid://b6e0u2i4t25u3"]
 
-[ext_resource type="Texture2D" uid="uid://b2gqt5yd7ynvv" path="res://assets/Player/player_placeholder.png" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://b37mk0qnp2yqq" path="res://scripts/player.gd" id="1_g2els"]
+[ext_resource type="Texture2D" uid="uid://bfwkl824kbt7a" path="res://assets/Player/2026_10_11_0r8_Kleki.png" id="2_smehm"]
+[ext_resource type="Texture2D" uid="uid://l63uy0xag35k" path="res://assets/Player/Idle.png" id="3_qlg0r"]
+[ext_resource type="Texture2D" uid="uid://bpjobeg3chww" path="res://assets/Player/Jump_-_crouch.png" id="4_smehm"]
+[ext_resource type="Texture2D" uid="uid://8tuxrxd4eqph" path="res://assets/Player/Walk.png" id="4_tuyoq"]
+[ext_resource type="Texture2D" uid="uid://cuhv6vbqkc4fp" path="res://assets/Player/Walk_2.png" id="5_fjrip"]
+[ext_resource type="Texture2D" uid="uid://ey742lv57chn" path="res://assets/Player/Jump_-_air_1.png" id="5_ur7pv"]
+[ext_resource type="Texture2D" uid="uid://ddvpadg0g04sk" path="res://assets/Player/Jump_-_air_2.png" id="6_y4r1p"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g2els"]
-size = Vector2(14, 14)
+size = Vector2(10, 30)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3vyb7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_smehm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_qlg0r")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_smehm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ur7pv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_y4r1p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ur7pv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_smehm")
+}],
+"loop": 0,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_tuyoq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_fjrip")
+}],
+"loop": 1,
+"name": &"run",
+"speed": 3.0
+}]
 
 [node name="player" type="CharacterBody2D" unique_id=1200693243 groups=["player"]]
 collision_layer = 2
 collision_mask = 2
 script = ExtResource("1_g2els")
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=444515056]
-texture = ExtResource("1_3vyb7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=417975661]
 physics_interpolation_mode = 1
@@ -20,3 +68,7 @@ shape = SubResource("RectangleShape2D_g2els")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=564217212]
 zoom = Vector2(5, 5)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1986765385]
+sprite_frames = SubResource("SpriteFrames_3vyb7")
+animation = &"idle"

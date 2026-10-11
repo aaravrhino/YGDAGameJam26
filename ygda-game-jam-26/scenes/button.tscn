@@ -1,38 +1,47 @@
 [gd_scene format=3 uid="uid://djuncdvgug2jg"]
 
 [ext_resource type="Script" uid="uid://c0wqh8gg81yjr" path="res://scripts/button.gd" id="1_mi6dp"]
-[ext_resource type="Texture2D" uid="uid://b2gqt5yd7ynvv" path="res://assets/Player/player_placeholder.png" id="2_rhj8v"]
+[ext_resource type="Texture2D" uid="uid://bxhwvvcbbdm43" path="res://assets/Interactables/Buttons/pixil-frame-1.png" id="2_1bdt2"]
+[ext_resource type="Texture2D" uid="uid://cl27ub7veqkq" path="res://assets/Interactables/Buttons/pixil-frame-0.png" id="3_8m7bo"]
 [ext_resource type="AudioStream" uid="uid://cosjk61wdvff3" path="res://assets/SFX/rockhit.mp3" id="3_i7y4x"]
 [ext_resource type="AudioStream" uid="uid://boaa8b3ffutje" path="res://assets/SFX/rockslide.mp3" id="4_1bdt2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i7y4x"]
-size = Vector2(9, 9)
+size = Vector2(10, 3)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_a1nxj"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_rhj8v")
+"texture": ExtResource("2_1bdt2")
 }],
 "loop": 1,
-"name": &"idle",
+"name": &"On",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_8m7bo")
+}],
+"loop": 1,
+"name": &"Pressed",
 "speed": 5.0
 }]
 
-[node name="Button Pivot" type="Area2D" unique_id=1290052436]
+[node name="Blue Button" type="Area2D" unique_id=1290052436]
 collision_layer = 2
 collision_mask = 2
 script = ExtResource("1_mi6dp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=598338612]
-position = Vector2(0, 0.5)
+position = Vector2(0, 3.5)
 shape = SubResource("RectangleShape2D_i7y4x")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=698905668]
 position = Vector2(-1.9073486e-06, -1.9073486e-06)
 scale = Vector2(0.609375, 0.609375)
 sprite_frames = SubResource("SpriteFrames_a1nxj")
-animation = &"idle"
+animation = &"Pressed"
 
 [node name="Rockhit" type="AudioStreamPlayer" parent="." unique_id=877951650]
 stream = ExtResource("3_i7y4x")

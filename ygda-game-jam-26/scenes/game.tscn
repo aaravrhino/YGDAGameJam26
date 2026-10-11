@@ -8,4 +8,4 @@
 [node name="Level 1" parent="." unique_id=1680909377 instance=ExtResource("1_yqjtg")]
 
 [node name="player" parent="." unique_id=1200693243 instance=ExtResource("2_yqjtg")]
-position = Vector2(-85, 86)
+position = Vector2(-86, 82)

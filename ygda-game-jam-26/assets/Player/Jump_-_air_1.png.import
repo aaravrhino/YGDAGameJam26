@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b725wob0j81vs"
-path="res://.godot/imported/pixil-frame-0_22.png-222bc8d020fbac655525acaacd109a80.ctex"
+uid="uid://ey742lv57chn"
+path="res://.godot/imported/Jump_-_air_1.png-50e4ae755dcb6a3658abb085ad47f098.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Interactables/pixil-frame-0_22.png"
-dest_files=["res://.godot/imported/pixil-frame-0_22.png-222bc8d020fbac655525acaacd109a80.ctex"]
+source_file="res://assets/Player/Jump_-_air_1.png"
+dest_files=["res://.godot/imported/Jump_-_air_1.png-50e4ae755dcb6a3658abb085ad47f098.ctex"]
 
 [params]
 

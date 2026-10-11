@@ -1,35 +1,35 @@
 [gd_scene format=3 uid="uid://c5ddvfr44g815"]
 
-[ext_resource type="Texture2D" uid="uid://bpw314hgxxt7x" path="res://assets/Door/pixilart-frames (2)/pixil-frame-0.png" id="1_hac6s"]
+[ext_resource type="Texture2D" uid="uid://cm02svga1syyr" path="res://assets/Door/pixilart-frames (2)/pixil-frame-0.png" id="1_hac6s"]
 [ext_resource type="Script" uid="uid://bjdqu0g0gqgcm" path="res://scripts/door.gd" id="1_j5bs6"]
-[ext_resource type="Texture2D" uid="uid://f2vsqsvorp7s" path="res://assets/Door/pixilart-frames (2)/pixil-frame-1.png" id="2_j5bs6"]
-[ext_resource type="Texture2D" uid="uid://di7sgx6ejo1y0" path="res://assets/Door/pixilart-frames (2)/pixil-frame-2.png" id="3_2bwol"]
-[ext_resource type="Texture2D" uid="uid://b6qgbexytkhi2" path="res://assets/Door/pixilart-frames (2)/pixil-frame-3.png" id="4_piyrh"]
-[ext_resource type="Texture2D" uid="uid://dudrrpclalsgr" path="res://assets/Door/pixilart-frames (2)/pixil-frame-4.png" id="5_yjedc"]
-[ext_resource type="Texture2D" uid="uid://bq6ray7k0elau" path="res://assets/Door/pixilart-frames (2)/pixil-frame-5.png" id="6_qf4ce"]
-[ext_resource type="Texture2D" uid="uid://dme0br4buf6ui" path="res://assets/Door/pixilart-frames (2)/pixil-frame-6.png" id="7_aivh6"]
-[ext_resource type="Texture2D" uid="uid://dxtnsc7o21me3" path="res://assets/Door/pixilart-frames (2)/pixil-frame-7.png" id="8_7ljja"]
-[ext_resource type="Texture2D" uid="uid://bgh7umjq5tnac" path="res://assets/Door/pixilart-frames (2)/pixil-frame-8.png" id="9_gabdl"]
-[ext_resource type="Texture2D" uid="uid://cvulpfgxhpghs" path="res://assets/Door/pixilart-frames (2)/pixil-frame-9.png" id="10_2fj8v"]
-[ext_resource type="Texture2D" uid="uid://bionr0vhqaovk" path="res://assets/Door/pixilart-frames (2)/pixil-frame-10.png" id="11_b6ryk"]
-[ext_resource type="Texture2D" uid="uid://clfb7dgxorvey" path="res://assets/Door/pixilart-frames (2)/pixil-frame-11.png" id="12_ttkhy"]
-[ext_resource type="Texture2D" uid="uid://cde1a5lgyu4ae" path="res://assets/Door/pixilart-frames (2)/pixil-frame-12.png" id="13_0hp88"]
-[ext_resource type="Texture2D" uid="uid://vatx4r7f785f" path="res://assets/Door/pixilart-frames (2)/pixil-frame-13.png" id="14_03ntk"]
-[ext_resource type="Texture2D" uid="uid://bl87niajkujua" path="res://assets/Door/pixilart-frames (2)/pixil-frame-14.png" id="15_g81xo"]
-[ext_resource type="Texture2D" uid="uid://dg2a5sbjt1bj1" path="res://assets/Door/pixilart-frames (2)/pixil-frame-15.png" id="16_8c1ed"]
-[ext_resource type="Texture2D" uid="uid://c75q3xk0qea52" path="res://assets/Door/pixilart-frames (2)/pixil-frame-16.png" id="17_vpepk"]
-[ext_resource type="Texture2D" uid="uid://cfrt03ic1f4cs" path="res://assets/Door/pixilart-frames (2)/pixil-frame-17.png" id="18_auc4v"]
-[ext_resource type="Texture2D" uid="uid://byxpsrifli5h4" path="res://assets/Door/pixilart-frames (2)/pixil-frame-18.png" id="19_fb3cl"]
-[ext_resource type="Texture2D" uid="uid://dtj72q3xmho4f" path="res://assets/Door/pixilart-frames (2)/pixil-frame-19.png" id="20_i8g44"]
-[ext_resource type="Texture2D" uid="uid://cwfpqtadnp0xn" path="res://assets/Door/pixilart-frames (2)/pixil-frame-20.png" id="21_augqo"]
-[ext_resource type="Texture2D" uid="uid://bervi13beyoh8" path="res://assets/Door/pixilart-frames (2)/pixil-frame-21.png" id="22_7nje3"]
-[ext_resource type="Texture2D" uid="uid://chi8d2gnis5s8" path="res://assets/Door/pixilart-frames (2)/pixil-frame-22.png" id="23_be8rq"]
-[ext_resource type="Texture2D" uid="uid://dsdm30dx8b70v" path="res://assets/Door/pixilart-frames (2)/pixil-frame-23.png" id="24_ffmwl"]
-[ext_resource type="Texture2D" uid="uid://b1lwwel58gano" path="res://assets/Door/pixilart-frames (2)/pixil-frame-24.png" id="25_dgi0c"]
-[ext_resource type="Texture2D" uid="uid://laf1oucec646" path="res://assets/Door/pixilart-frames (2)/pixil-frame-25.png" id="26_mgd4q"]
-[ext_resource type="Texture2D" uid="uid://iv2jtuul176l" path="res://assets/Door/pixilart-frames (2)/pixil-frame-26.png" id="27_f45qg"]
-[ext_resource type="Texture2D" uid="uid://b5soh0yj8jrqm" path="res://assets/Door/pixilart-frames (2)/pixil-frame-27.png" id="28_wkbxa"]
-[ext_resource type="Texture2D" uid="uid://ct7cwwlpnful3" path="res://assets/Door/pixilart-frames (2)/pixil-frame-28.png" id="29_byi8a"]
+[ext_resource type="Texture2D" uid="uid://cv4kidg6j82gk" path="res://assets/Door/pixilart-frames (2)/pixil-frame-1.png" id="2_j5bs6"]
+[ext_resource type="Texture2D" uid="uid://pmhefsj8x2fu" path="res://assets/Door/pixilart-frames (2)/pixil-frame-2.png" id="3_2bwol"]
+[ext_resource type="Texture2D" uid="uid://ckury5qn3h6fi" path="res://assets/Door/pixilart-frames (2)/pixil-frame-3.png" id="4_piyrh"]
+[ext_resource type="Texture2D" uid="uid://c5ri6mm7l8dc4" path="res://assets/Door/pixilart-frames (2)/pixil-frame-4.png" id="5_yjedc"]
+[ext_resource type="Texture2D" uid="uid://d4iroi1t4duf7" path="res://assets/Door/pixilart-frames (2)/pixil-frame-5.png" id="6_qf4ce"]
+[ext_resource type="Texture2D" uid="uid://bjrf1oq0xj7r5" path="res://assets/Door/pixilart-frames (2)/pixil-frame-6.png" id="7_aivh6"]
+[ext_resource type="Texture2D" uid="uid://dcvmddio2urup" path="res://assets/Door/pixilart-frames (2)/pixil-frame-7.png" id="8_7ljja"]
+[ext_resource type="Texture2D" uid="uid://btdn3oiik7d7" path="res://assets/Door/pixilart-frames (2)/pixil-frame-8.png" id="9_gabdl"]
+[ext_resource type="Texture2D" uid="uid://dnsxd4xlqb6tm" path="res://assets/Door/pixilart-frames (2)/pixil-frame-9.png" id="10_2fj8v"]
+[ext_resource type="Texture2D" uid="uid://7rigqwccsrys" path="res://assets/Door/pixilart-frames (2)/pixil-frame-10.png" id="11_b6ryk"]
+[ext_resource type="Texture2D" uid="uid://cuscxoaup657x" path="res://assets/Door/pixilart-frames (2)/pixil-frame-11.png" id="12_ttkhy"]
+[ext_resource type="Texture2D" uid="uid://bna7wxsm7o0i" path="res://assets/Door/pixilart-frames (2)/pixil-frame-12.png" id="13_0hp88"]
+[ext_resource type="Texture2D" uid="uid://dtj5d7mtawm8h" path="res://assets/Door/pixilart-frames (2)/pixil-frame-13.png" id="14_03ntk"]
+[ext_resource type="Texture2D" uid="uid://co0b0bucstpkb" path="res://assets/Door/pixilart-frames (2)/pixil-frame-14.png" id="15_g81xo"]
+[ext_resource type="Texture2D" uid="uid://xs1etyqtvv4r" path="res://assets/Door/pixilart-frames (2)/pixil-frame-15.png" id="16_8c1ed"]
+[ext_resource type="Texture2D" uid="uid://drn51vlm0my2m" path="res://assets/Door/pixilart-frames (2)/pixil-frame-16.png" id="17_vpepk"]
+[ext_resource type="Texture2D" uid="uid://bglhw2jcvx5tc" path="res://assets/Door/pixilart-frames (2)/pixil-frame-17.png" id="18_auc4v"]
+[ext_resource type="Texture2D" uid="uid://dma8a76sktmqe" path="res://assets/Door/pixilart-frames (2)/pixil-frame-18.png" id="19_fb3cl"]
+[ext_resource type="Texture2D" uid="uid://dmrknlygpfdhf" path="res://assets/Door/pixilart-frames (2)/pixil-frame-19.png" id="20_i8g44"]
+[ext_resource type="Texture2D" uid="uid://cbftlkpmge3uk" path="res://assets/Door/pixilart-frames (2)/pixil-frame-20.png" id="21_augqo"]
+[ext_resource type="Texture2D" uid="uid://boh87sus6tgiq" path="res://assets/Door/pixilart-frames (2)/pixil-frame-21.png" id="22_7nje3"]
+[ext_resource type="Texture2D" uid="uid://cd2sdkiqwoma6" path="res://assets/Door/pixilart-frames (2)/pixil-frame-22.png" id="23_be8rq"]
+[ext_resource type="Texture2D" uid="uid://ymxxeyxhdnop" path="res://assets/Door/pixilart-frames (2)/pixil-frame-23.png" id="24_ffmwl"]
+[ext_resource type="Texture2D" uid="uid://lnvhb27htiu5" path="res://assets/Door/pixilart-frames (2)/pixil-frame-24.png" id="25_dgi0c"]
+[ext_resource type="Texture2D" uid="uid://ngtd8enkyo3b" path="res://assets/Door/pixilart-frames (2)/pixil-frame-25.png" id="26_mgd4q"]
+[ext_resource type="Texture2D" uid="uid://bbxmbfk2gdf6v" path="res://assets/Door/pixilart-frames (2)/pixil-frame-26.png" id="27_f45qg"]
+[ext_resource type="Texture2D" uid="uid://b76mhxt8j7y7g" path="res://assets/Door/pixilart-frames (2)/pixil-frame-27.png" id="28_wkbxa"]
+[ext_resource type="Texture2D" uid="uid://bndk4emtvbxs2" path="res://assets/Door/pixilart-frames (2)/pixil-frame-28.png" id="29_byi8a"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tv3bi"]
 size = Vector2(30, 30)
@@ -133,7 +133,7 @@ animations = [{
 "texture": ExtResource("29_byi8a")
 }],
 "loop": 0,
-"name": &"open",
+"name": &"opening",
 "speed": 5.0
 }]
 
@@ -149,7 +149,7 @@ shape = SubResource("RectangleShape2D_tv3bi")
 position = Vector2(-2.2737368e-13, -2.2737368e-13)
 scale = Vector2(1.9375, 1.9375)
 sprite_frames = SubResource("SpriteFrames_tv3bi")
-animation = &"idle"
+animation = &"opening"
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

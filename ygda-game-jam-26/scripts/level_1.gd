@@ -5,8 +5,10 @@ var is_rotating: bool = false
 @onready var slide_sfx: AudioStreamPlayer = $rockslide
 @onready var hit_sfx: AudioStreamPlayer = $rockhit
 
-func _unhandled_input(event: InputEvent) -> void:
-	if event.is_action_pressed("test_turn") and not event.is_echo() and not is_rotating:
+
+func _process(_delta: float) -> void:
+	if Spin.is_rotating:
+		Spin.is_rotating = false
 		get_viewport().set_input_as_handled()
 		is_rotating = true
 		slide_sfx.play()
@@ -15,3 +17,14 @@ func _unhandled_input(event: InputEvent) -> void:
 			await get_tree().create_timer(0.0001).timeout
 		is_rotating = false
 		hit_sfx.play()
+
+#func _unhandled_input(event: InputEvent) -> void:
+	#if event.is_action_pressed("test_turn") and not event.is_echo() and not is_rotating:
+		#get_viewport().set_input_as_handled()
+		#is_rotating = true
+		#slide_sfx.play()
+		#for rotations in 45:
+			#rotation += deg_to_rad(2)
+			#await get_tree().create_timer(0.0001).timeout
+		#is_rotating = false
+		#hit_sfx.play()

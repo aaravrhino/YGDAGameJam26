@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bvjxcjyrtivjy"
-path="res://.godot/imported/pixil-frame-0_21.png-ad1948b6e665d8d9bff331d40bc93516.ctex"
+uid="uid://bpjobeg3chww"
+path="res://.godot/imported/Jump_-_crouch.png-f1688c87612b2d69d0dad1da9a3e5c59.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Interactables/pixil-frame-0_21.png"
-dest_files=["res://.godot/imported/pixil-frame-0_21.png-ad1948b6e665d8d9bff331d40bc93516.ctex"]
+source_file="res://assets/Player/Jump_-_crouch.png"
+dest_files=["res://.godot/imported/Jump_-_crouch.png-f1688c87612b2d69d0dad1da9a3e5c59.ctex"]
 
 [params]
 

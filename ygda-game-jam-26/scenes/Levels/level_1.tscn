@@ -213,8 +213,8 @@ script = ExtResource("8_15mv3")
 [node name="Door" parent="TileMapLayer" unique_id=1464244716 instance=ExtResource("10_ngn3o")]
 position = Vector2(69, 69)
 
-[node name="Button Pivot" parent="TileMapLayer" unique_id=1290052436 instance=ExtResource("10_14nfc")]
-position = Vector2(-87, -39)
+[node name="Blue Button" parent="TileMapLayer" unique_id=386486553 instance=ExtResource("10_14nfc")]
+position = Vector2(-87, -36)
 
 [node name="rockslide" type="AudioStreamPlayer" parent="TileMapLayer" unique_id=1617724835]
 stream = ExtResource("9_xxpsm")
