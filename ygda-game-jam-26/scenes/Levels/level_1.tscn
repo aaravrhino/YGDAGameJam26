@@ -215,4 +215,4 @@ volume_db = -10.0
 [node name="rockhit" type="AudioStreamPlayer" parent="TileMapLayer" unique_id=989553324]
 stream = ExtResource("10_j85eu")
 volume_db = -15.0
-pitch_scale = 1.8
+pitch_scale = 1.7
