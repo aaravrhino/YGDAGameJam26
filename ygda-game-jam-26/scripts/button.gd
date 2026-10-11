@@ -1,13 +1,29 @@
 extends Area2D
 
+var is_rotating: bool = false
+@onready var Anime : AnimatedSprite2D = $AnimatedSprite2D
+@onready var slide_sfx: AudioStreamPlayer = $Rockslide
+@onready var hit_sfx: AudioStreamPlayer = $Rockhit
+
 var player_can_interact = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	pass
+#func _unhandled_input(event: InputEvent) -> void:
+	#if event.is_action_pressed("test_turn") and not event.is_echo() and not is_rotating:
+		#get_viewport().set_input_as_handled()
+		#is_rotating = true
+		#slide_sfx.play()
+		#for rotations in 45:
+			#rotation += deg_to_rad(2)
+			#await get_tree().create_timer(0.0001).timeout
+		#is_rotating = false
+		#hit_sfx.play()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
+	Anime.play("idle")
 	if Input.is_action_just_pressed("test_turn") and player_can_interact:
 			pass
 

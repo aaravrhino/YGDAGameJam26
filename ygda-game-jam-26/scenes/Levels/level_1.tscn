@@ -10,7 +10,9 @@
 [ext_resource type="Texture2D" uid="uid://b4tpb7vyfl06w" path="res://assets/Tile Sets/Middle_blocks_color_correction.png" id="6_fcfvj"]
 [ext_resource type="Script" uid="uid://cri0x14rqdnim" path="res://scripts/level_1.gd" id="8_15mv3"]
 [ext_resource type="AudioStream" uid="uid://boaa8b3ffutje" path="res://assets/SFX/rockslide.mp3" id="9_xxpsm"]
+[ext_resource type="PackedScene" uid="uid://djuncdvgug2jg" path="res://scenes/button.tscn" id="10_14nfc"]
 [ext_resource type="AudioStream" uid="uid://cosjk61wdvff3" path="res://assets/SFX/rockhit.mp3" id="10_j85eu"]
+[ext_resource type="PackedScene" uid="uid://c5ddvfr44g815" path="res://scenes/door.tscn" id="10_ngn3o"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_14nfc"]
 texture = ExtResource("1_4p1o3")
@@ -207,6 +209,12 @@ tile_set = SubResource("TileSet_k7kl4")
 tile_map_data = PackedByteArray("AAD5//n/AwAAAAIAAAAGAPn/AQABAAAAAAAGAAYAAQABAAEAAAD5/wYAAQAAAAMAAAD5//r/AgABAAAAAAD5//v/AgABAAAAAAD5//z/AgABAAEAAAD5//3/AgABAAIAAAD5//7/AgABAAEAAAD5////AgABAAAAAAD5/wAAAgABAAAAAAD5/wEAAgABAAEAAAD5/wIAAgABAAEAAAD5/wMAAgABAAAAAAD5/wQAAgABAAAAAAD5/wUAAgABAAAAAAD6/wYAAgACAAIAAAD7/wYAAgACAAEAAAD8/wYAAgACAAEAAAD9/wYAAgACAAEAAAD+/wYAAgACAAAAAAD//wYAAgACAAAAAAAAAAYAAgACAAAAAAABAAYAAgACAAEAAAACAAYAAgACAAEAAAADAAYAAgACAAAAAAAEAAYAAgACAAAAAAAFAAYAAgACAAIAAAAGAAUAAgADAAEAAAAGAAEAAgADAAAAAAAGAAIAAgADAAAAAAAGAAMAAgADAAAAAAAGAAQAAgADAAAAAAAGAAAAAgADAAIAAAAGAPz/AgADAAAAAAAGAP3/AgADAAAAAAAGAP7/AgADAAAAAAAGAP//AgADAAAAAAAGAPr/AgADAAEAAAAGAPv/AgADAAEAAAAFAPn/AgAAAAAAAAAEAPn/AgAAAAAAAAADAPn/AgAAAAEAAAACAPn/AgAAAAEAAAABAPn/AgAAAAIAAAAAAPn/AgAAAAAAAAD///n/AgAAAAAAAAD+//n/AgAAAAAAAAD9//n/AgAAAAEAAAD8//n/AgAAAAEAAAD7//n/AgAAAAIAAAD6//n/AgAAAAIAAAABAAUACgABAAIAAGABAAQACgABAAIAAGABAAMACgABAAAAAGABAAIACgABAAIAAGABAAEACgABAAEAAGABAAAACgABAAAAAGABAP3/CgABAAIAAGABAP7/CgABAAAAAGABAP//CgABAAAAAGD6/wMACgABAAAAAAD7/wMACgABAAIAAAD8/wMACgACAAIAAAD//wEACgABAAEAAAAAAAEACgABAAAAAAD+/wEACgAAAAMAAAD7//7/CgACAAAAAAD6//7/CgABAAIAAAABAPz/CgABAAIAAGABAPv/CgACAAAAAGAFAAAACgABAAIAAAAEAAAACgAAAAAAAAA=")
 tile_set = SubResource("TileSet_tv3bi")
 script = ExtResource("8_15mv3")
+
+[node name="Door" parent="TileMapLayer" unique_id=1464244716 instance=ExtResource("10_ngn3o")]
+position = Vector2(69, 69)
+
+[node name="Button Pivot" parent="TileMapLayer" unique_id=1290052436 instance=ExtResource("10_14nfc")]
+position = Vector2(-87, -39)
 
 [node name="rockslide" type="AudioStreamPlayer" parent="TileMapLayer" unique_id=1617724835]
 stream = ExtResource("9_xxpsm")
