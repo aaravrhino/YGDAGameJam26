@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://b37mk0qnp2yqq" path="res://scripts/player.gd" id="1_g2els"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g2els"]
-size = Vector2(16, 16)
+size = Vector2(14, 14)
 
 [node name="player" type="CharacterBody2D" unique_id=1200693243]
 collision_layer = 2
