@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://d1e0woy2nmm37"]
 
-[ext_resource type="Script" uid="uid://b8isc6msosaxe" path="res://scenes/settings.gd" id="1_uhhto"]
+[ext_resource type="Script" uid="uid://b8isc6msosaxe" path="res://scripts/settings.gd" id="1_uhhto"]
 [ext_resource type="Texture2D" uid="uid://bdstpf4o0s0jw" path="res://assets/Main Menu/2026_10_12_0mb_Kleki.png" id="2_1g033"]
 [ext_resource type="Texture2D" uid="uid://dh5603f0baqhw" path="res://assets/LevelButtons/pixil-frame-0 (1).png" id="3_1g033"]
 [ext_resource type="Texture2D" uid="uid://cqjs64groy4cj" path="res://assets/LevelButtons/1.png" id="3_oe2nd"]

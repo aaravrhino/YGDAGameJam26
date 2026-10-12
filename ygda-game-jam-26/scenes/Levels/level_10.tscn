@@ -14,6 +14,7 @@
 [ext_resource type="AudioStream" uid="uid://boaa8b3ffutje" path="res://assets/SFX/rockslide.mp3" id="12_38mn1"]
 [ext_resource type="AudioStream" uid="uid://cosjk61wdvff3" path="res://assets/SFX/rockhit.mp3" id="13_rn4pv"]
 [ext_resource type="FontFile" uid="uid://ljy2lkulst31" path="res://assets/Extra/small_pixel.ttf" id="14_jqp81"]
+[ext_resource type="PackedScene" uid="uid://djuncdvgug2jg" path="res://scenes/Buttons/bluebutton.tscn" id="15_1o7u5"]
 [ext_resource type="PackedScene" uid="uid://b6e0u2i4t25u3" path="res://scenes/player.tscn" id="17_wv6jk"]
 [ext_resource type="PackedScene" uid="uid://bveuv64515pyy" path="res://scenes/main_music.tscn" id="18_lo02w"]
 
@@ -209,17 +210,19 @@ tile_map_data = PackedByteArray("AADX/+D/AAADAAQAAADX/+H/AAADAAQAAADX/+L/AAADAAQ
 tile_set = SubResource("TileSet_k7kl4")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1565123352]
-tile_map_data = PackedByteArray("AADw//D/AQAAAAAAAAAMAPD/AQABAAAAAAAMAAwAAQABAAMAAADw/wwAAwAAAAEAAAA=")
+tile_map_data = PackedByteArray("AADw//D/AQAAAAAAAAAMAPD/AQABAAAAAAAMAAwAAQABAAMAAADw/wwAAwAAAAEAAADw//H/AgABAAAAAADw//L/AgABAAEAAADw//P/AgABAAEAAADw//T/AgABAAEAAADw//X/AgABAAEAAADw//b/AgABAAAAAADw//f/AgABAAAAAADw//j/AgABAAAAAADw//n/AgABAAAAAADw//r/AgABAAIAAADw//v/AgABAAAAAADw//z/AgABAAIAAADw//3/AgABAAAAAADw//7/AgABAAAAAADw////AgABAAAAAADw/wAAAgABAAEAAADw/wEAAgABAAAAAADw/wIAAgABAAEAAADw/wMAAgABAAAAAADw/wQAAgABAAIAAADw/wUAAgABAAEAAADw/wYAAgABAAAAAADw/wcAAgABAAAAAADw/wgAAgABAAIAAADw/wkAAgABAAIAAADw/woAAgABAAAAAADw/wsAAgABAAAAAADx/wwAAgACAAEAAADy/wwAAgACAAEAAADz/wwAAgACAAEAAAD0/wwAAgACAAAAAAD1/wwAAgACAAIAAAD2/wwAAgACAAIAAAD3/wwAAgACAAIAAAD4/wwAAgACAAAAAAD5/wwAAgACAAEAAAD6/wwAAgACAAAAAAD7/wwAAgACAAAAAAD8/wwAAgACAAAAAAD9/wwAAgACAAEAAAD+/wwAAgACAAIAAAD//wwAAgACAAIAAAAAAAwAAgACAAAAAAABAAwAAgACAAAAAAACAAwAAgACAAAAAAADAAwAAgACAAAAAAAEAAwAAgACAAIAAAAFAAwAAgACAAAAAAAGAAwAAgACAAAAAAAHAAwAAgACAAEAAAAIAAwAAgACAAEAAAAJAAwAAgACAAIAAAAKAAwAAgACAAEAAAALAAwAAgACAAAAAAAMAAsAAgADAAEAAAAMAAoAAgADAAEAAAAMAAkAAgADAAAAAAAMAAgAAgADAAEAAAAMAAcAAgADAAAAAAAMAAYAAgADAAAAAAAMAAUAAgADAAAAAAAMAAQAAgADAAEAAAAMAAMAAgADAAIAAAAMAAIAAgADAAAAAAAMAAEAAgADAAAAAAAMAAAAAgADAAAAAAAMAP//AgADAAAAAAAMAP7/AgADAAAAAAAMAP3/AgADAAIAAAAMAPz/AgADAAEAAAAMAPv/AgADAAIAAAAMAPr/AgADAAAAAAAMAPn/AgADAAAAAAAMAPj/AgADAAAAAAAMAPf/AgADAAEAAAAMAPb/AgADAAIAAAAMAPX/AgADAAIAAAAMAPT/AgADAAAAAAAMAPP/AgADAAAAAAAMAPL/AgADAAIAAAAMAPH/AgADAAEAAAALAPD/AgAAAAIAAAAKAPD/AgAAAAAAAAAJAPD/AgAAAAAAAAAIAPD/AgAAAAIAAAAHAPD/AgAAAAIAAAAGAPD/AgAAAAIAAAAFAPD/AgAAAAEAAAAEAPD/AgAAAAAAAAADAPD/AgAAAAAAAAACAPD/AgAAAAAAAAABAPD/AgAAAAEAAAAAAPD/AgAAAAEAAAD///D/AgAAAAAAAAD+//D/AgAAAAEAAAD9//D/AgAAAAIAAAD8//D/AgAAAAIAAAD7//D/AgAAAAAAAAD6//D/AgAAAAAAAAD5//D/AgAAAAEAAAD4//D/AgAAAAEAAAD3//D/AgAAAAEAAAD2//D/AgAAAAAAAAD1//D/AgAAAAAAAAD0//D/AgAAAAIAAADz//D/AgAAAAEAAADy//D/AgAAAAEAAADx//D/AgAAAAAAAAD9/wsABwACAAAAAAD1/wkABwADAAAAAAD1/wsABwAEAAAAAADx/wcACgABAAAAAADy/wcACgABAAIAAADz/wcACgABAAIAAAD0/wcACgABAAMAAAD1/wcABwACAAAAAAD4/wcABwADAAAAAAD5/wcACgABAAMAAAD6/wcACgABAAAAAAD7/wcACgABAAIAAAD8/wcACgABAAAAAAD9/wcACgABAAAAAAD+/wcACgABAAIAAAD//wcACgABAAIAAAAAAAcACgABAAAAAAABAAcACgABAAMAAAACAAcACgABAAMAAAADAAcACgABAAAAAAAEAAcACgABAAAAAAAFAAcACgABAAMAAAAGAAcACgABAAIAAAAHAAcACgABAAAAAAAIAAcACgABAAMAAAAJAAcACgABAAMAAAAKAAcACgABAAAAAAALAAcACgABAAMAAAD1/wgACgABAAAAAGD7/wgABwACAAAAAAD//wgABwADAAAAAAA=")
 tile_set = SubResource("TileSet_tv3bi")
 script = ExtResource("9_fxg5g")
 
 [node name="Spikes" parent="TileMapLayer" unique_id=723641993 instance=ExtResource("10_dpmbu")]
+tile_map_data = PackedByteArray("AAABAAsAAQAAAAAAAAAGAAsAAAAAAAAAAAA=")
 
 [node name="Door" parent="TileMapLayer" unique_id=1464244716 instance=ExtResource("11_b88fe")]
-position = Vector2(-363, -57)
+position = Vector2(-213, 169)
 next_level = "res://scenes/Levels/level_10.tscn"
-blue_button_amount = 1
-red_button_amount = 1
+blue_button_amount = 2
+red_button_amount = 2
+green_button_amount = 3
 
 [node name="rockslide" type="AudioStreamPlayer" parent="TileMapLayer" unique_id=1617724835]
 stream = ExtResource("12_38mn1")
@@ -231,15 +234,18 @@ volume_db = -15.0
 pitch_scale = 1.7
 
 [node name="Label" type="Label" parent="TileMapLayer" unique_id=1070297374]
-offset_left = -306.0
-offset_top = -160.0
-offset_right = -240.0
-offset_bottom = -125.0
+offset_left = -127.0
+offset_top = 157.0
+offset_right = -61.0
+offset_bottom = 192.0
 theme_override_fonts/font = ExtResource("14_jqp81")
 theme_override_font_sizes/font_size = 16
-text = "Level 9"
+text = "Level 10"
+
+[node name="Blue Button" parent="TileMapLayer" unique_id=1290052436 instance=ExtResource("15_1o7u5")]
+position = Vector2(166, 169)
 
 [node name="player" parent="." unique_id=1200693243 instance=ExtResource("17_wv6jk")]
-position = Vector2(-319, -118)
+position = Vector2(-146, 176)
 
 [node name="Main Music" parent="." unique_id=816251687 instance=ExtResource("18_lo02w")]
