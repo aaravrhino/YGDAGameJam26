@@ -221,7 +221,7 @@ tile_map_data = PackedByteArray("AAAFAAUAAAAAAAAAAGAFAAMAAAAAAAAAAGAFAAIAAAAAAAA
 
 [node name="Door" parent="TileMapLayer" unique_id=1464244716 instance=ExtResource("11_q5w8t")]
 position = Vector2(-80, 80)
-next_level = "res://scenes/Levels/level_7.tscn"
+next_level = "res://scenes/Levels/level_8.tscn"
 
 [node name="rockslide" type="AudioStreamPlayer" parent="TileMapLayer" unique_id=1617724835]
 stream = ExtResource("14_xmfaa")
