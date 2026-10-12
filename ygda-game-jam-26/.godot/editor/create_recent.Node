@@ -1,6 +1,6 @@
-CheckButton
 Label
 TextureRect
+CheckButton
 TextureButton
 Button
 AnimatedSprite2D
@@ -12,4 +12,3 @@ Sprite2D
 Timer
 TileMapLayer
 AudioStreamPlayer2D
-Camera2D

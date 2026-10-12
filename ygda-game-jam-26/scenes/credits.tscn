@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://b5a0ckra2dk4j"]
+
+[ext_resource type="Texture2D" uid="uid://bdstpf4o0s0jw" path="res://assets/Main Menu/2026_10_12_0mb_Kleki.png" id="1_2ckv8"]
+[ext_resource type="FontFile" uid="uid://ljy2lkulst31" path="res://assets/Extra/small_pixel.ttf" id="2_0ctdu"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_a1nxj"]
+font = ExtResource("2_0ctdu")
+font_size = 128
+
+[sub_resource type="LabelSettings" id="LabelSettings_v4hcl"]
+font = ExtResource("2_0ctdu")
+font_size = 64
+
+[node name="credits" type="Control" unique_id=377510433]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=653990008]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("1_2ckv8")
+
+[node name="Label" type="Label" parent="." unique_id=1285783584]
+layout_mode = 0
+offset_left = 257.0
+offset_top = 33.0
+offset_right = 897.0
+offset_bottom = 161.0
+text = "Credits:"
+label_settings = SubResource("LabelSettings_a1nxj")
+
+[node name="Label2" type="Label" parent="." unique_id=1843608126]
+layout_mode = 0
+offset_left = 44.0
+offset_top = 228.0
+offset_right = 1108.0
+offset_bottom = 828.0
+text = "Aarav Dwivedi - programmer
+Henry Lipitz -  programmer
+
+Emmalee Foltz - artist
+Jonathan Agar - artist
+
+Ramsey Catanzano - SFX
+Olufemi Oni - music
+"
+label_settings = SubResource("LabelSettings_v4hcl")
+horizontal_alignment = 1
