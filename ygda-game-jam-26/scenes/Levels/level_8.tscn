@@ -14,6 +14,9 @@
 [ext_resource type="AudioStream" uid="uid://boaa8b3ffutje" path="res://assets/SFX/rockslide.mp3" id="12_xr1xj"]
 [ext_resource type="AudioStream" uid="uid://cosjk61wdvff3" path="res://assets/SFX/rockhit.mp3" id="13_rpjje"]
 [ext_resource type="FontFile" uid="uid://ljy2lkulst31" path="res://assets/Extra/small_pixel.ttf" id="14_t1t2o"]
+[ext_resource type="PackedScene" uid="uid://ob50hk8ful5e" path="res://scenes/Buttons/redbutton.tscn" id="17_kqxeh"]
+[ext_resource type="PackedScene" uid="uid://djuncdvgug2jg" path="res://scenes/Buttons/bluebutton.tscn" id="17_ukmp7"]
+[ext_resource type="PackedScene" uid="uid://ctfaxjcnwhgif" path="res://scenes/Buttons/greenbutton.tscn" id="18_f2ij1"]
 [ext_resource type="PackedScene" uid="uid://b6e0u2i4t25u3" path="res://scenes/player.tscn" id="18_x8vr0"]
 [ext_resource type="PackedScene" uid="uid://bveuv64515pyy" path="res://scenes/main_music.tscn" id="19_ucmoj"]
 
@@ -201,7 +204,7 @@ sources/7 = SubResource("TileSetAtlasSource_fcfvj")
 sources/9 = SubResource("TileSetAtlasSource_2y5yt")
 sources/10 = SubResource("TileSetAtlasSource_2os1m")
 
-[node name="Level5" type="Node2D" unique_id=1680909377]
+[node name="Level8" type="Node2D" unique_id=1680909377]
 
 [node name="TileMapLayer2" type="TileMapLayer" parent="." unique_id=1559811856]
 position = Vector2(0, 1)
@@ -209,13 +212,15 @@ tile_map_data = PackedByteArray("AADX/+D/AAADAAQAAADX/+H/AAADAAQAAADX/+L/AAADAAQ
 tile_set = SubResource("TileSet_k7kl4")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1565123352]
+tile_map_data = PackedByteArray("AADv//H/AwAAAAAAAADv//L/AgABAAAAAADv//P/AgABAAIAAADv//T/AgABAAIAAADv//X/AgABAAAAAADv//b/AgABAAAAAADv//f/AgABAAAAAADv//j/AgABAAAAAADv//n/AgABAAEAAADv//r/AgABAAAAAADv//v/AgABAAAAAADv//z/AgABAAEAAADw//H/AgAAAAAAAADx//H/AgAAAAIAAADy//H/AgAAAAAAAADz//H/AgAAAAIAAAD0//H/AgAAAAAAAAD1//H/AgAAAAEAAAD7/wEAAgACAAAAAAD8/wEAAgACAAEAAAD9/wEAAgACAAEAAAAAAPX/AgADAAEAAAAAAPb/AgADAAAAAAAAAPf/AgADAAAAAAAAAPj/AgADAAAAAAAAAPn/AgADAAAAAAAAAPr/AgADAAEAAAAAAPv/AgADAAEAAAAAAPz/AgADAAEAAAAAAP3/AgADAAAAAAAAAP7/AgADAAAAAAAAAP//AgADAAIAAAAAAAAAAgADAAAAAAD3//H/AgAAAAAAAAD4//H/AgAAAAEAAAD5//H/AgAAAAIAAAD6//H/AgAAAAAAAAD2//H/AgAAAAAAAAD7//H/AgAAAAAAAAD8//H/AgAAAAAAAAD9//H/AgAAAAEAAAD+//H/AgAAAAAAAAD///H/AgAAAAAAAADv/wEAAwAAAAEAAADv//3/AgABAAAAAADv//7/AgABAAIAAADv////AgABAAIAAADv/wAAAgABAAAAAADw/wEAAgACAAAAAADx/wEABwACAAEAAAAAAPH/AwABAAAAAAAAAPL/AgADAAAAAAAAAPP/AgADAAAAAAAAAPT/AgADAAAAAADx/wUAAgABAAIAAADx/wYABwACAAAAAADw//3/BwACAAAAAAD1//3/CgABAAIAAAD7//3/BwAEAAAAAAD7//j/BwADAAAAAAD0//3/CgAAAAAAAAD2//b/CgACAAEAAAD1//b/CgABAAAAAAD///v/BwACAAAAAAD0/wYACgACAAAAAADz/wYACgABAAAAAADy/wYACgABAAAAAADx/wIAAgABAAIAAADx/wMAAgABAAAAAADx/wQAAgABAAAAAAD5/wUAAgADAAAAAAD5/wYAAgADAAAAAAD+/wEAAgACAAIAAAD//wEAAgACAAIAAAD0//X/CgABAAMAAFD0//T/CgACAAAAAGD2//3/CgACAAEAAAD5/wQAAgADAAEAAAD5/wMAAgADAAAAAAD5/wIAAgADAAAAAAD5/wEABwACAAAAAAD6/wEAAgACAAAAAADy/wIACgABAAEAAADz/wIACgABAAEAAAD0/wIACgABAAAAAAD1/wIACgABAAIAAAD2/wIACgACAAAAAAD4/wQACgABAAAAAAD3/wQACgAAAAAAAAD5/wcAAgADAAAAAAD5/wsAAgADAAAAAAD5/wwAAgADAAAAAAD5/w0AAgADAAAAAAD2/wcABwACAAEAAADz/wkABwADAAAAAADw/wsABwAEAAAAAADu/wkACgACAAAAAADt/wkACgABAAAAAADs/wkACgABAAAAAADw/wYABwABAAIAAADv/wYABwABAAIAAADu/wYABwABAAIAAADt/wYABwABAAIAAADs/wYABwABAAIAAADr/wYABwAAAAIAAADr/wcAAgABAAAAAADr/wgAAgABAAAAAADr/wkABwABAAIAAADr/wsAAgABAAAAAADr/wwAAgABAAAAAAD5/wkAAgADAAAAAAD5/wgAAgADAAAAAAD5/woAAgADAAEAAADq/wkAAgAAAAIAAADp/wkAAgAAAAAAAADo/wkAAgAAAAAAAADq/wsACgABAAAAAADp/wsACgABAAEAAADo/wsACgABAAIAAADs/xAAAgACAAIAAADt/xAAAgACAAIAAADu/xAAAgACAAAAAADv/xAAAgACAAAAAADw/xAAAgACAAAAAADx/xAAAgACAAAAAADy/xAAAgACAAAAAADz/xAAAgACAAEAAAD0/xAAAgACAAAAAAD1/xAAAgACAAAAAAD2/xAAAgACAAAAAAD3/xAAAgACAAIAAAD4/xAAAgACAAAAAADr/w0AAgABAAAAAADr/w4AAgABAAIAAADr/w8AAgABAAEAAADr/xAAAwAAAAMAAAD5/w4AAgADAAIAAAD5/w8AAgADAAEAAAD5/xAAAwABAAMAAADn/wsACgABAAMAAADm/wsACgAAAAEAAADn/wkAAgAAAAEAAADm/wkAAgAAAAEAAADl/wkAAgAAAAAAAADk/wkAAgAAAAAAAADj/wkABwAAAAAAAADj/woAAgABAAEAAADj/wsAAgABAAAAAADj/wwAAgABAAAAAADj/w0AAgABAAAAAADj/w4AAgABAAAAAADj/w8AAgABAAAAAADj/xAAAgABAAAAAADj/xEAAgABAAIAAADj/xIAAgABAAIAAADm/xAABwADAAAAAADo/xQACgACAAIAAGDj/xMAAgABAAAAAADj/xQAAgABAAEAAADj/xUABwAAAAEAAADk/xUAAgACAAAAAADl/xUAAgACAAAAAADm/xUAAgACAAEAAADn/xUAAgACAAAAAADo/xUABwABAAEAAADk/w0ABwACAAAAAAAAAAEABwABAAEAAAD0//b/AwAAAAMAAAA=")
 tile_set = SubResource("TileSet_tv3bi")
 script = ExtResource("9_wenwv")
 
 [node name="Spikes" parent="TileMapLayer" unique_id=723641993 instance=ExtResource("10_k16yg")]
+tile_map_data = PackedByteArray("AADw/wAAAAAAAAAAAADx/wAAAAAAAAAAAAD7/wAAAAAAAAAAAAD8/wAAAAAAAAAAAAD9/wAAAAAAAAAAAAD0/wcAAAAAAAAAADDz/wcAAAAAAAAAADDy/wcAAAAAAAAAADDx/wcAAAAAAAAAADDw/wcAAAAAAAAAADDv/wcAAAAAAAAAADDu/wcAAAAAAAAAADDt/wcAAAAAAAAAADDs/wcAAAAAAAAAADA=")
 
 [node name="Door" parent="TileMapLayer" unique_id=1464244716 instance=ExtResource("11_c47yc")]
-position = Vector2(-80, 80)
+position = Vector2(-350, 337)
 next_level = "res://scenes/Levels/level_7.tscn"
 
 [node name="rockslide" type="AudioStreamPlayer" parent="TileMapLayer" unique_id=1617724835]
@@ -236,7 +241,16 @@ theme_override_fonts/font = ExtResource("14_t1t2o")
 theme_override_font_sizes/font_size = 16
 text = "Level 7"
 
+[node name="Blue Button" parent="TileMapLayer" unique_id=1290052436 instance=ExtResource("17_ukmp7")]
+position = Vector2(-157, -168)
+
+[node name="Green Button" parent="TileMapLayer" unique_id=320807737 instance=ExtResource("18_f2ij1")]
+position = Vector2(-311, 170)
+
+[node name="Red Button" parent="TileMapLayer" unique_id=127634900 instance=ExtResource("17_kqxeh")]
+position = Vector2(-120, 98)
+
 [node name="player" parent="." unique_id=1200693243 instance=ExtResource("18_x8vr0")]
-position = Vector2(-85, -79)
+position = Vector2(-247, -62)
 
 [node name="Main Music" parent="." unique_id=816251687 instance=ExtResource("19_ucmoj")]
