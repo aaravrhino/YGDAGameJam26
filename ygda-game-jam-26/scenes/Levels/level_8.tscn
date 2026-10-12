@@ -233,13 +233,14 @@ volume_db = -15.0
 pitch_scale = 1.7
 
 [node name="Label" type="Label" parent="TileMapLayer" unique_id=1070297374]
-offset_left = -65.0
-offset_top = -87.0
-offset_right = 1.0
-offset_bottom = -64.0
+offset_left = -198.0
+offset_top = -66.0
+offset_right = -132.0
+offset_bottom = -31.0
 theme_override_fonts/font = ExtResource("14_t1t2o")
 theme_override_font_sizes/font_size = 16
-text = "Level 7"
+text = "Level 8
+"
 
 [node name="Blue Button" parent="TileMapLayer" unique_id=1290052436 instance=ExtResource("17_ukmp7")]
 position = Vector2(-157, -168)
