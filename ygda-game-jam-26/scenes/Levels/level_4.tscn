@@ -224,7 +224,7 @@ position = Vector2(207, -388)
 
 [node name="Door" parent="TileMapLayer" unique_id=1464244716 instance=ExtResource("11_3pho0")]
 position = Vector2(-186, -29)
-next_level = "res://scenes/Levels/level_3.tscn"
+next_level = "res://scenes/Levels/level_4.tscn"
 blue_button_amount = 2
 red_button_amount = 2
 green_button_amount = 0
