@@ -200,7 +200,7 @@ sources/7 = SubResource("TileSetAtlasSource_fcfvj")
 sources/9 = SubResource("TileSetAtlasSource_2y5yt")
 sources/10 = SubResource("TileSetAtlasSource_2os1m")
 
-[node name="Level2" type="Node2D" unique_id=1680909377]
+[node name="Level3" type="Node2D" unique_id=1680909377]
 
 [node name="TileMapLayer2" type="TileMapLayer" parent="." unique_id=1559811856]
 position = Vector2(0, 1)
@@ -221,7 +221,9 @@ position = Vector2(-130, -56)
 [node name="Door" parent="TileMapLayer" unique_id=1464244716 instance=ExtResource("10_ttcij")]
 position = Vector2(-108, 104)
 next_level = "res://scenes/Levels/level_3.tscn"
-button_amount = 2
+blue_button_amount = 2
+red_button_amount = 0
+green_button_amount = 0
 
 [node name="rockslide" type="AudioStreamPlayer" parent="TileMapLayer" unique_id=1617724835]
 stream = ExtResource("12_452xl")
