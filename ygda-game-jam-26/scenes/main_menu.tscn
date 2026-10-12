@@ -102,6 +102,7 @@ texture_hover = ExtResource("10_7b55j")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1354731291]
 stream = ExtResource("14_7b55j")
+volume_db = -10.0
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Settings" to="." method="_on_settings_pressed"]
