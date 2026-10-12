@@ -214,6 +214,8 @@ script = ExtResource("8_15mv3")
 
 [node name="Door" parent="TileMapLayer" unique_id=1464244716 instance=ExtResource("10_ngn3o")]
 position = Vector2(69, 69)
+red_button_amount = 0
+green_button_amount = 0
 
 [node name="Blue Button" parent="TileMapLayer" unique_id=386486553 instance=ExtResource("10_14nfc")]
 position = Vector2(-81, -46)
