@@ -31,3 +31,7 @@ func rotate_level() -> void:
 
 	is_rotating = false
 	hit_sfx.play()
+
+
+func _on_spikes_tree_entered() -> void:
+	pass # Replace with function body.

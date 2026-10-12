@@ -9,6 +9,7 @@ var in_air: bool = false
 @onready var walk_sfx: AudioStreamPlayer = $metalWalking
 @onready var jump_sfx: AudioStreamPlayer = $jumpsound
 @onready var floorhit_sfx: AudioStreamPlayer = $floorhit
+@onready var spikes_hit: TileMapLayer = $"../TileMapLayer/Spikes"
 
 func _ready() -> void:
 	Spin.active_level = get_parent()
@@ -56,11 +57,18 @@ func _physics_process(delta: float) -> void:
 			velocity.x = move_toward(velocity.x, 0, SPEED)
 
 		move_and_slide()
+		for i in get_slide_collision_count():
+			var collision = get_slide_collision(i)
+			var collider = collision.get_collider()
+			if collider == spikes_hit:
+				get_tree().reload_current_scene()
 	else:
 		animated_sprite.play("in_door")
+	 
+	
 
 
 func _on_animated_sprite_2d_frame_changed() -> void:
-	if animated_sprite.animation == "run":
+	if animated_sprite.animation == "run" and not walk_sfx.playing:
 		walk_sfx.pitch_scale = randf_range(0.85, 1.15)
 		walk_sfx.play()
