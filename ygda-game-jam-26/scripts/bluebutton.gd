@@ -27,8 +27,10 @@ func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
 		Anime.play("Pressed")
 		if not has_pressed:
-			Spin.is_rotating = true
-		has_pressed = true
+			has_pressed = true
+			Level2Buttons.buttons_pressed += 1
+			if Level2Buttons.buttons_pressed == 2:
+				Spin.blue_is_rotating = true
 
 
 func _on_body_exited(body: Node2D) -> void:

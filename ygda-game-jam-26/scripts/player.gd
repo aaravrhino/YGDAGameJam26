@@ -10,6 +10,9 @@ var in_air: bool = false
 @onready var jump_sfx: AudioStreamPlayer = $jumpsound
 @onready var floorhit_sfx: AudioStreamPlayer = $floorhit
 
+func _ready() -> void:
+	Spin.active_level = get_node("../Level 2")
+
 func _physics_process(delta: float) -> void:
 	if not Spin.in_door:
 		if not is_on_floor():
