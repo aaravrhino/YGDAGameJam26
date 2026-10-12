@@ -237,13 +237,13 @@ theme_override_font_sizes/font_size = 16
 text = "Level 1"
 
 [node name="Label2" type="Label" parent="TileMapLayer" unique_id=1833039766]
-offset_left = -59.0
-offset_top = -49.0
-offset_right = 5.0
-offset_bottom = -26.0
+offset_left = -73.0
+offset_top = -51.0
+offset_right = -9.0
+offset_bottom = -28.0
 theme_override_fonts/font = ExtResource("14_iiv34")
 theme_override_font_sizes/font_size = 8
-text = " <- Level 1"
+text = " <- Press"
 
 [node name="player" parent="." unique_id=1200693243 instance=ExtResource("15_vtd0g")]
 position = Vector2(-81, 81)

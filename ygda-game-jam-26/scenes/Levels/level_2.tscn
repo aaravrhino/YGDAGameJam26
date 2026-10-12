@@ -241,5 +241,16 @@ theme_override_fonts/font = ExtResource("14_2ewt3")
 theme_override_font_sizes/font_size = 16
 text = "Level 2"
 
+[node name="Label2" type="Label" parent="TileMapLayer" unique_id=771591809]
+offset_left = -119.0
+offset_top = -71.0
+offset_right = -43.0
+offset_bottom = -48.0
+rotation = -0.46207467
+theme_override_fonts/font = ExtResource("14_2ewt3")
+theme_override_font_sizes/font_size = 8
+text = "<- Press Both ->
+"
+
 [node name="player" parent="." unique_id=1200693243 instance=ExtResource("15_e4h20")]
 position = Vector2(-41, 32)
