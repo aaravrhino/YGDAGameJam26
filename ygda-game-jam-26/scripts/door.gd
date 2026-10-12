@@ -3,11 +3,18 @@ extends Area2D
 @onready var Anime : AnimatedSprite2D = $AnimatedSprite2D
 @onready var door_sfx: AudioStreamPlayer = $doorsound
 @export var next_level: String = "res://scenes/Levels/level_2.tscn"
-@export var button_amount: int = 1
+@export var blue_button_amount: int = 1
+@export var red_button_amount: int = 1
+@export var green_button_amount: int = 1
 
 func _ready() -> void:
 	Level2Buttons.buttons_pressed = 0
-	Level2Buttons.button_goal = button_amount
+	Level2Buttons.button_goal = blue_button_amount
+	Level2Buttons.buttons_pressed = 0
+	Level2Buttons.button_goal = red_button_amount
+	Level2Buttons.buttons_pressed = 0
+	Level2Buttons.button_goal = green_button_amount
+	
 
 var player_can_interact = false
 var door_opened = false
