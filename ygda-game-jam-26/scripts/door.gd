@@ -10,10 +10,10 @@ extends Area2D
 func _ready() -> void:
 	Level2Buttons.buttons_pressed = 0
 	Level2Buttons.button_goal = blue_button_amount
-	Level2Buttons.buttons_pressed = 0
-	Level2Buttons.button_goal = red_button_amount
-	Level2Buttons.buttons_pressed = 0
-	Level2Buttons.button_goal = green_button_amount
+	Level2Buttons.red_pressed = 0
+	Level2Buttons.red_goal = red_button_amount
+	Level2Buttons.green_pressed = 0
+	Level2Buttons.green_goal = green_button_amount
 	
 
 var player_can_interact = false
