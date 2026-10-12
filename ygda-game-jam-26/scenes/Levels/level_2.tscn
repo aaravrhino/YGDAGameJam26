@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://djuncdvgug2jg" path="res://scenes/bluebutton.tscn" id="11_rbuvs"]
 [ext_resource type="AudioStream" uid="uid://boaa8b3ffutje" path="res://assets/SFX/rockslide.mp3" id="12_452xl"]
 [ext_resource type="AudioStream" uid="uid://cosjk61wdvff3" path="res://assets/SFX/rockhit.mp3" id="13_f2tki"]
+[ext_resource type="FontFile" uid="uid://ljy2lkulst31" path="res://assets/Extra/small_pixel.ttf" id="14_2ewt3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_14nfc"]
 texture = ExtResource("1_wxjxf")
@@ -227,3 +228,12 @@ volume_db = -10.0
 stream = ExtResource("13_f2tki")
 volume_db = -15.0
 pitch_scale = 1.7
+
+[node name="Label" type="Label" parent="TileMapLayer" unique_id=1070297374]
+offset_left = -96.0
+offset_top = -39.0
+offset_right = -30.0
+offset_bottom = -16.0
+theme_override_fonts/font = ExtResource("14_2ewt3")
+theme_override_font_sizes/font_size = 16
+text = "Level 2"

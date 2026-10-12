@@ -12,4 +12,4 @@ position = Vector2(-1167, -996)
 [node name="Level 2" parent="." unique_id=350410363 instance=ExtResource("2_lnu2h")]
 
 [node name="player" parent="." unique_id=1200693243 instance=ExtResource("2_yqjtg")]
-position = Vector2(-45, 32)
+position = Vector2(-1251, -915)

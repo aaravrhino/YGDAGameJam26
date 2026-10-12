@@ -29,7 +29,7 @@ func _on_body_entered(body: Node2D) -> void:
 		if not has_pressed:
 			has_pressed = true
 			Level2Buttons.buttons_pressed += 1
-			if Level2Buttons.buttons_pressed == 2:
+			if Level2Buttons.buttons_pressed == Level2Buttons.button_goal:
 				Spin.blue_is_rotating = true
 
 
