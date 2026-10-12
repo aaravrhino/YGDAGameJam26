@@ -6,3 +6,6 @@
 [node name="Main Music" type="AudioStreamPlayer" unique_id=816251687]
 stream = ExtResource("1_3i6y5")
 script = ExtResource("1_k6dxv")
+
+[node name="Timer" type="Timer" parent="." unique_id=1697659765]
+wait_time = 0.1

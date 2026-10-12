@@ -1,16 +1,28 @@
 extends AudioStreamPlayer
 
-@onready var audio: AudioStreamPlayer = $"."
+var fading := false
 
 func _ready() -> void:
-	audio.volume_db = -15
-	audio.play()
+	volume_db = -50
+	play()
+	_fade_in()
 
-func _process(delta: float) -> void:
-	if Spin.in_door:
+func _process(_delta: float) -> void:
+	if Spin.in_door and not fading:
 		_fade_out()
-		
-func _fade_out():
-	for i in 50:
-		audio.volume_db += -0.01
-		await get_tree().create_timer(0.1).timeout
+
+func _fade_in() -> void:
+	for i in range(35):
+		if fading:
+			return
+		volume_db += 1
+		await get_tree().create_timer(0.03).timeout
+
+func _fade_out() -> void:
+	fading = true
+
+	for i in range(35):
+		volume_db -= 1
+		await get_tree().create_timer(0.03).timeout
+
+	stop()

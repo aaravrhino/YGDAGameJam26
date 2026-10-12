@@ -16,6 +16,7 @@
 [ext_resource type="AudioStream" uid="uid://cosjk61wdvff3" path="res://assets/SFX/rockhit.mp3" id="13_f2tki"]
 [ext_resource type="FontFile" uid="uid://ljy2lkulst31" path="res://assets/Extra/small_pixel.ttf" id="14_2ewt3"]
 [ext_resource type="PackedScene" uid="uid://b6e0u2i4t25u3" path="res://scenes/player.tscn" id="15_e4h20"]
+[ext_resource type="PackedScene" uid="uid://bveuv64515pyy" path="res://scenes/main_music.tscn" id="17_0lf7e"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_14nfc"]
 texture = ExtResource("1_wxjxf")
@@ -201,7 +202,7 @@ sources/7 = SubResource("TileSetAtlasSource_fcfvj")
 sources/9 = SubResource("TileSetAtlasSource_2y5yt")
 sources/10 = SubResource("TileSetAtlasSource_2os1m")
 
-[node name="Level3" type="Node2D" unique_id=1680909377]
+[node name="Level2" type="Node2D" unique_id=1680909377]
 
 [node name="TileMapLayer2" type="TileMapLayer" parent="." unique_id=1559811856]
 position = Vector2(0, 1)
@@ -259,3 +260,5 @@ text = "<- Press Both ->
 
 [node name="player" parent="." unique_id=1200693243 instance=ExtResource("15_e4h20")]
 position = Vector2(-41, 32)
+
+[node name="Main Music" parent="." unique_id=816251687 instance=ExtResource("17_0lf7e")]
