@@ -15,7 +15,6 @@
 [ext_resource type="AudioStream" uid="uid://cosjk61wdvff3" path="res://assets/SFX/rockhit.mp3" id="13_rbmjg"]
 [ext_resource type="FontFile" uid="uid://ljy2lkulst31" path="res://assets/Extra/small_pixel.ttf" id="14_hfndf"]
 [ext_resource type="PackedScene" uid="uid://djuncdvgug2jg" path="res://scenes/Buttons/bluebutton.tscn" id="15_g4hpc"]
-[ext_resource type="PackedScene" uid="uid://ctfaxjcnwhgif" path="res://scenes/Buttons/greenbutton.tscn" id="16_sq6rq"]
 [ext_resource type="PackedScene" uid="uid://ob50hk8ful5e" path="res://scenes/Buttons/redbutton.tscn" id="17_x2xi8"]
 [ext_resource type="PackedScene" uid="uid://b6e0u2i4t25u3" path="res://scenes/player.tscn" id="18_fqogb"]
 [ext_resource type="PackedScene" uid="uid://bveuv64515pyy" path="res://scenes/main_music.tscn" id="19_un27h"]
@@ -220,8 +219,10 @@ script = ExtResource("9_jlbuy")
 tile_map_data = PackedByteArray("AADr/wQAAAAAAAAAAADs/wQAAAAAAAAAAADt/wQAAAAAAAAAAADu/wQAAAAAAAAAAADv/wQAAAAAAAAAAADw/wQAAAAAAAAAAADx/wQAAAAAAAAAAADy/wQAAAAAAAAAAADz/wQAAAAAAAAAAAD0/wQAAAAAAAAAAAD1/wQAAAAAAAAAAAD2/wQAAAAAAAAAAAD3/wQAAAAAAAAAAAD4/wQAAAAAAAAAAAD5/wQAAAAAAAAAAAD6/wQAAAAAAAAAAAD7/wQAAAAAAAAAAAD8/wQAAAAAAAAAAAD9/wQAAAAAAAAAAAD+/wQAAAAAAAAAAAD//wQAAAAAAAAAAADr//H/AAAAAAAAADDs//H/AAAAAAAAADDt//H/AAAAAAAAADDu//H/AAAAAAAAADDv//H/AAAAAAAAADDw//H/AAAAAAAAADDx//H/AAAAAAAAADDy//H/AAAAAAAAADDz//H/AAAAAAAAADD0//H/AAAAAAAAADD1//H/AAAAAAAAADD2//H/AAAAAAAAADD3//H/AAAAAAAAADD4//H/AAAAAAAAADD5//H/AAAAAAAAADD6//H/AAAAAAAAADD7//H/AAAAAAAAADD8//H/AAAAAAAAADD9//H/AAAAAAAAADD+//H/AAAAAAAAADD///H/AAAAAAAAADA=")
 
 [node name="Door" parent="TileMapLayer" unique_id=1464244716 instance=ExtResource("11_fsjn3")]
-position = Vector2(-365, -61)
-next_level = "res://scenes/Levels/level_7.tscn"
+position = Vector2(-363, -57)
+next_level = "res://scenes/Levels/level_10.tscn"
+blue_button_amount = 1
+red_button_amount = 1
 
 [node name="rockslide" type="AudioStreamPlayer" parent="TileMapLayer" unique_id=1617724835]
 stream = ExtResource("12_38boq")
@@ -243,9 +244,6 @@ text = "Level 9"
 
 [node name="Blue Button" parent="TileMapLayer" unique_id=1290052436 instance=ExtResource("15_g4hpc")]
 position = Vector2(54, -103)
-
-[node name="Green Button" parent="TileMapLayer" unique_id=320807737 instance=ExtResource("16_sq6rq")]
-position = Vector2(-311, 170)
 
 [node name="Red Button" parent="TileMapLayer" unique_id=127634900 instance=ExtResource("17_x2xi8")]
 position = Vector2(213, -81)
