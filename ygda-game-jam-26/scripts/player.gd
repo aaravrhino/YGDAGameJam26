@@ -23,13 +23,15 @@ func _physics_process(delta: float) -> void:
 			in_air = true
 		if in_air and is_on_floor():
 			in_air = false
-			floorhit_sfx.play()
+			if Level2Buttons.sound_on:
+				floorhit_sfx.play()
 			
 
 		# Handle jump.
 		if Input.is_action_just_pressed("action_jump") and is_on_floor():
 			velocity.y = JUMP_VELOCITY
-			jump_sfx.play()
+			if Level2Buttons.sound_on:
+				jump_sfx.play()
 
 		# Get the input direction and handle the movement/deceleration.
 		# As good practice, you should replace UI actions with custom gameplay actions.
@@ -71,6 +73,6 @@ func _physics_process(delta: float) -> void:
 
 
 func _on_animated_sprite_2d_frame_changed() -> void:
-	if animated_sprite.animation == "run" and not walk_sfx.playing:
+	if animated_sprite.animation == "run" and not walk_sfx.playing and Level2Buttons.sound_on:
 		walk_sfx.pitch_scale = randf_range(0.85, 1.15)
 		walk_sfx.play()

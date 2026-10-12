@@ -5,7 +5,8 @@ extends Control
 
 
 func _ready() -> void:
-	player.play()
+	if Level2Buttons.sound_on:
+		player.play()
 
 func _on_settings_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/settings.tscn")

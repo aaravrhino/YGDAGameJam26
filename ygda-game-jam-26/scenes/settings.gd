@@ -45,9 +45,10 @@ func _on_back_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
 
 
-func _on_music_button_down() -> void:
-	pass # Replace with function body.
-
-
-func _on_music_button_up() -> void:
-	pass # Replace with function body.
+func _on_music_pressed() -> void:
+	if  Level2Buttons.sound_on:
+		Level2Buttons.sound_on = false
+		$Music.texture_normal = load("res://assets/LevelButtons/pixil-frame-0.png")
+	else:
+		Level2Buttons.sound_on = true
+		$Music.texture_normal = load("res://assets/LevelButtons/pixil-frame-0_1.png")

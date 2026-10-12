@@ -147,6 +147,10 @@ animations = [{
 collision_layer = 2
 collision_mask = 2
 script = ExtResource("1_j5bs6")
+next_level = null
+blue_button_amount = null
+red_button_amount = null
+green_button_amount = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=591954144]
 shape = SubResource("RectangleShape2D_tv3bi")

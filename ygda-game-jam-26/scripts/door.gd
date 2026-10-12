@@ -36,8 +36,9 @@ func _on_body_entered(body: Node2D) -> void:
 		var tween = get_tree().create_tween()
 		tween.tween_property(body, "global_position", global_position, 6)
 		Spin.in_door = true
-		door_sfx.play()
-		woosh_sfx.play()
+		if Level2Buttons.sound_on:
+			door_sfx.play()
+			woosh_sfx.play()
 		tween.tween_property(body, "global_position", global_position, 1)
 		await get_tree().create_timer(7).timeout
 		Spin.in_door = false
