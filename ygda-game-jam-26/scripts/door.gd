@@ -22,6 +22,9 @@ var door_opened = false
 func _process(_delta: float) -> void:
 	if not player_can_interact and not door_opened:
 		Anime.play("idle")
+func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed("reset"):
+		get_tree().reload_current_scene()
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player") and not door_opened:

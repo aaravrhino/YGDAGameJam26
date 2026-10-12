@@ -217,7 +217,7 @@ script = ExtResource("9_ld14n")
 position = Vector2(42, 119)
 
 [node name="Door" parent="TileMapLayer" unique_id=1464244716 instance=ExtResource("11_m0526")]
-position = Vector2(85, -114)
+position = Vector2(88, -86)
 next_level = "res://scenes/Levels/level_4.tscn"
 
 [node name="rockslide" type="AudioStreamPlayer" parent="TileMapLayer" unique_id=1617724835]

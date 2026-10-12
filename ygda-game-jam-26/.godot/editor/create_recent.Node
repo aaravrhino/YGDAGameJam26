@@ -1,3 +1,4 @@
+TileMapLayer
 Label
 AudioStreamPlayer
 Timer
@@ -7,7 +8,6 @@ AnimatedSprite2D
 Sprite2D
 TextureButton
 AudioStreamPlayer2D
-TileMapLayer
 Camera2D
 CharacterBody2D
 TileMap
