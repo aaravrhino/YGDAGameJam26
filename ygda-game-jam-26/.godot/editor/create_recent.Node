@@ -1,6 +1,6 @@
+AudioStreamPlayer
 TileMapLayer
 Label
-AudioStreamPlayer
 Timer
 CollisionShape2D
 Area2D

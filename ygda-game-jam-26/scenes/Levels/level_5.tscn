@@ -9,13 +9,11 @@
 [ext_resource type="Texture2D" uid="uid://r3qpmwph3vvs" path="res://assets/Tile Sets/Brickssmooth_blocks_update.png" id="7_53o8t"]
 [ext_resource type="Texture2D" uid="uid://b4tpb7vyfl06w" path="res://assets/Tile Sets/Middle_blocks_color_correction.png" id="8_gld1a"]
 [ext_resource type="Script" uid="uid://jyu3dt66xnyu" path="res://scripts/Level Scripts/level_2.gd" id="9_pgfsa"]
-[ext_resource type="Texture2D" uid="uid://bqyrfajey05ev" path="res://assets/Tile Sets/Spike.png" id="10_lirff"]
-[ext_resource type="Texture2D" uid="uid://ccgty68i8jprr" path="res://assets/Tile Sets/Spike_rust.png" id="11_fy7gb"]
-[ext_resource type="Script" uid="uid://dm7esffqgitmh" path="res://scenes/Levels/spikes.gd" id="12_fy7gb"]
 [ext_resource type="PackedScene" uid="uid://c5ddvfr44g815" path="res://scenes/door.tscn" id="12_v5054"]
 [ext_resource type="AudioStream" uid="uid://boaa8b3ffutje" path="res://assets/SFX/rockslide.mp3" id="13_mge42"]
 [ext_resource type="AudioStream" uid="uid://cosjk61wdvff3" path="res://assets/SFX/rockhit.mp3" id="14_x8oju"]
 [ext_resource type="FontFile" uid="uid://ljy2lkulst31" path="res://assets/Extra/small_pixel.ttf" id="15_15831"]
+[ext_resource type="PackedScene" uid="uid://dx3fxgrfbwa24" path="res://scenes/spikes.tscn" id="15_erhw7"]
 [ext_resource type="PackedScene" uid="uid://b6e0u2i4t25u3" path="res://scenes/player.tscn" id="16_usb1v"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_14nfc"]
@@ -202,22 +200,6 @@ sources/7 = SubResource("TileSetAtlasSource_fcfvj")
 sources/9 = SubResource("TileSetAtlasSource_2y5yt")
 sources/10 = SubResource("TileSetAtlasSource_2os1m")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vjfvl"]
-texture = ExtResource("10_lirff")
-0:0/0 = 0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-3.2327824, -7.0234823, -1.0564919, -7.122405, -1.2543373, 0.49461174, 1.7133312, -6.5288706, 3.1971664, 2.374136, 5.0766907, -5.3418036, 6.857292, -1.4838333, 8, 8, -8, 8, -8, -0.395689, -5.409073, -4.2536583)
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wtkng"]
-texture = ExtResource("11_fy7gb")
-0:0/0 = 0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-3.2327824, -7.0234823, -1.0564919, -7.122405, -1.2543373, 0.49461174, 1.7133312, -6.5288706, 3.1971664, 2.374136, 5.0766907, -5.3418036, 6.857292, -1.4838333, 8, 8, -8, 8, -8, -0.395689, -5.409073, -4.2536583)
-
-[sub_resource type="TileSet" id="TileSet_hs6it"]
-physics_layer_0/collision_layer = 2
-physics_layer_0/collision_mask = 2
-sources/0 = SubResource("TileSetAtlasSource_vjfvl")
-sources/1 = SubResource("TileSetAtlasSource_wtkng")
-
 [node name="Level4" type="Node2D" unique_id=1680909377]
 
 [node name="TileMapLayer2" type="TileMapLayer" parent="." unique_id=1559811856]
@@ -230,10 +212,7 @@ tile_map_data = PackedByteArray("AAD7//r/AQAAAAIAAAD8//r/AQAAAAIAAAD9//r/AQAAAAI
 tile_set = SubResource("TileSet_tv3bi")
 script = ExtResource("9_pgfsa")
 
-[node name="Spikes" type="TileMapLayer" parent="TileMapLayer" unique_id=274225738]
-tile_map_data = PackedByteArray("AAABAAYAAAAAAAAAAAAGAAYAAAAAAAAAAAA=")
-tile_set = SubResource("TileSet_hs6it")
-script = ExtResource("12_fy7gb")
+[node name="Spikes" parent="TileMapLayer" unique_id=723641993 instance=ExtResource("15_erhw7")]
 
 [node name="Door" parent="TileMapLayer" unique_id=1464244716 instance=ExtResource("12_v5054")]
 position = Vector2(-186, -29)
@@ -262,5 +241,3 @@ text = "Level 4"
 
 [node name="player" parent="." unique_id=1200693243 instance=ExtResource("16_usb1v")]
 position = Vector2(-59, 91)
-
-[connection signal="tree_entered" from="TileMapLayer/Spikes" to="TileMapLayer" method="_on_spikes_tree_entered"]
