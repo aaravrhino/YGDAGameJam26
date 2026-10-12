@@ -32,6 +32,7 @@
 [ext_resource type="Texture2D" uid="uid://b76mhxt8j7y7g" path="res://assets/Door/pixilart-frames (2)/pixil-frame-27.png" id="28_wkbxa"]
 [ext_resource type="Texture2D" uid="uid://bndk4emtvbxs2" path="res://assets/Door/pixilart-frames (2)/pixil-frame-28.png" id="29_byi8a"]
 [ext_resource type="AudioStream" uid="uid://c6ds0yjeu8h85" path="res://assets/SFX/dooropen.mp3" id="31_2bwol"]
+[ext_resource type="AudioStream" uid="uid://cvava1t1mi3h4" path="res://assets/SFX/therealportal.mp3" id="33_yjedc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tv3bi"]
 size = Vector2(30, 30)
@@ -160,6 +161,11 @@ animation = &"idle"
 stream = ExtResource("31_2bwol")
 volume_db = -20.0
 pitch_scale = 1.1
+
+[node name="woosh" type="AudioStreamPlayer" parent="." unique_id=63714099]
+stream = ExtResource("33_yjedc")
+volume_db = -20.0
+pitch_scale = 1.5
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

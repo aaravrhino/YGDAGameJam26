@@ -220,7 +220,7 @@ tile_map_data = PackedByteArray("AAD3//7/AAAAAAAAAAD4//7/AQAAAAAAAAD5//7/AAAAAAA
 
 [node name="Door" parent="TileMapLayer" unique_id=1464244716 instance=ExtResource("12_v5054")]
 position = Vector2(119, 101)
-next_level = "res://scenes/Levels/level_4.tscn"
+next_level = "res://scenes/Levels/level_6.tscn"
 red_button_amount = 2
 green_button_amount = 0
 

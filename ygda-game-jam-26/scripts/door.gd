@@ -6,6 +6,7 @@ extends Area2D
 @export var blue_button_amount: int = 1
 @export var red_button_amount: int = 1
 @export var green_button_amount: int = 1
+@onready var woosh_sfx: AudioStreamPlayer = $woosh
 
 func _ready() -> void:
 	Level2Buttons.buttons_pressed = 0
@@ -36,6 +37,7 @@ func _on_body_entered(body: Node2D) -> void:
 		tween.tween_property(body, "global_position", global_position, 6)
 		Spin.in_door = true
 		door_sfx.play()
+		woosh_sfx.play()
 		tween.tween_property(body, "global_position", global_position, 1)
 		await get_tree().create_timer(7).timeout
 		Spin.in_door = false

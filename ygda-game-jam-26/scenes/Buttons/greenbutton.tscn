@@ -28,7 +28,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Blue Button" type="Area2D" unique_id=1290052436]
+[node name="Green Button" type="Area2D" unique_id=1290052436]
 collision_layer = 2
 collision_mask = 2
 script = ExtResource("1_0goo8")

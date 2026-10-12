@@ -6,6 +6,9 @@
 [ext_resource type="Texture2D" uid="uid://conuqn4gokj45" path="res://assets/Main Menu/R_font.png" id="4_jk1qb"]
 [ext_resource type="Texture2D" uid="uid://cfv8pbefvsa0y" path="res://assets/Main Menu/T_font.png" id="5_5dd4i"]
 [ext_resource type="Texture2D" uid="uid://f8lh0ps3syer" path="res://assets/Main Menu/Y_font.png" id="6_lgwnu"]
+[ext_resource type="Texture2D" uid="uid://dk3cjy2qnhx5r" path="res://assets/Main Menu/2026_10_12_0nl_Kleki.png" id="7_jk1qb"]
+[ext_resource type="Texture2D" uid="uid://do2tu3vpvcm1p" path="res://assets/Main Menu/2026_10_12_0nz_Kleki.png" id="8_5dd4i"]
+[ext_resource type="Texture2D" uid="uid://c4wwiyfd1ucxh" path="res://assets/Main Menu/2026_10_12_0nz_Kleki_2.png" id="9_lgwnu"]
 
 [node name="Control" type="Control" unique_id=1278612928]
 layout_mode = 3
@@ -60,3 +63,18 @@ texture = ExtResource("5_5dd4i")
 position = Vector2(1106, 199.00008)
 scale = Vector2(4.3124995, 4.3124995)
 texture = ExtResource("6_lgwnu")
+
+[node name="Sprite2D9" type="Sprite2D" parent="." unique_id=723163139]
+position = Vector2(389, 449)
+scale = Vector2(5.7929683, 5.7929683)
+texture = ExtResource("7_jk1qb")
+
+[node name="Sprite2D10" type="Sprite2D" parent="." unique_id=1822608034]
+position = Vector2(531, 715)
+scale = Vector2(5.335937, 5.335937)
+texture = ExtResource("8_5dd4i")
+
+[node name="Sprite2D11" type="Sprite2D" parent="." unique_id=1366064321]
+position = Vector2(238.99998, 716)
+scale = Vector2(5.335937, 5.335937)
+texture = ExtResource("9_lgwnu")
