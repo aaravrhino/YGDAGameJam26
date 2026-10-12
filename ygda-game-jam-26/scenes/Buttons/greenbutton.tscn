@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://djuncdvgug2jg"]
+[gd_scene format=3 uid="uid://ctfaxjcnwhgif"]
 
-[ext_resource type="Script" uid="uid://c0wqh8gg81yjr" path="res://scripts/bluebutton.gd" id="1_mi6dp"]
-[ext_resource type="Texture2D" uid="uid://cee8n0rq7dfco" path="res://assets/Interactables/Buttons/pixil-frame-1.png" id="2_1bdt2"]
-[ext_resource type="Texture2D" uid="uid://m38cpjdkdb1k" path="res://assets/Interactables/Buttons/pixil-frame-0.png" id="3_8m7bo"]
-[ext_resource type="AudioStream" uid="uid://cosjk61wdvff3" path="res://assets/SFX/rockhit.mp3" id="3_i7y4x"]
-[ext_resource type="AudioStream" uid="uid://boaa8b3ffutje" path="res://assets/SFX/rockslide.mp3" id="4_1bdt2"]
+[ext_resource type="Script" uid="uid://be8h2hr2m7w4y" path="res://scripts/Button Scripts/greenbutton.gd" id="1_0goo8"]
+[ext_resource type="Texture2D" uid="uid://7o6u3ksdv0q7" path="res://assets/Interactables/Buttons/pixil-frame-4.png" id="2_0goo8"]
+[ext_resource type="Texture2D" uid="uid://b3ichw3uuqc7e" path="res://assets/Interactables/Buttons/pixil-frame-5.png" id="3_j1sgj"]
+[ext_resource type="AudioStream" uid="uid://cosjk61wdvff3" path="res://assets/SFX/rockhit.mp3" id="4_tcxqs"]
+[ext_resource type="AudioStream" uid="uid://boaa8b3ffutje" path="res://assets/SFX/rockslide.mp3" id="5_i5v63"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i7y4x"]
 size = Vector2(10, 10)
@@ -13,7 +13,7 @@ size = Vector2(10, 10)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_8m7bo")
+"texture": ExtResource("2_0goo8")
 }],
 "loop": 1,
 "name": &"On",
@@ -21,7 +21,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_1bdt2")
+"texture": ExtResource("3_j1sgj")
 }],
 "loop": 1,
 "name": &"Pressed",
@@ -31,7 +31,7 @@ animations = [{
 [node name="Blue Button" type="Area2D" unique_id=1290052436]
 collision_layer = 2
 collision_mask = 2
-script = ExtResource("1_mi6dp")
+script = ExtResource("1_0goo8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=598338612]
 shape = SubResource("RectangleShape2D_i7y4x")
@@ -40,13 +40,13 @@ shape = SubResource("RectangleShape2D_i7y4x")
 position = Vector2(-1.9073486e-06, -1.9073486e-06)
 scale = Vector2(0.609375, 0.609375)
 sprite_frames = SubResource("SpriteFrames_a1nxj")
-animation = &"On"
+animation = &"Pressed"
 
 [node name="Rockhit" type="AudioStreamPlayer" parent="." unique_id=877951650]
-stream = ExtResource("3_i7y4x")
+stream = ExtResource("4_tcxqs")
 
 [node name="Rockslide" type="AudioStreamPlayer" parent="." unique_id=356837520]
-stream = ExtResource("4_1bdt2")
+stream = ExtResource("5_i5v63")
 pitch_scale = 1.7
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

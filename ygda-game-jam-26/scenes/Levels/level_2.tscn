@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://b4tpb7vyfl06w" path="res://assets/Tile Sets/Middle_blocks_color_correction.png" id="8_4i6gi"]
 [ext_resource type="Script" uid="uid://jyu3dt66xnyu" path="res://scripts/Level Scripts/level_2.gd" id="9_wxjxf"]
 [ext_resource type="PackedScene" uid="uid://c5ddvfr44g815" path="res://scenes/door.tscn" id="10_ttcij"]
-[ext_resource type="PackedScene" uid="uid://djuncdvgug2jg" path="res://scenes/bluebutton.tscn" id="11_rbuvs"]
+[ext_resource type="PackedScene" uid="uid://djuncdvgug2jg" path="res://scenes/Buttons/bluebutton.tscn" id="11_rbuvs"]
 [ext_resource type="AudioStream" uid="uid://boaa8b3ffutje" path="res://assets/SFX/rockslide.mp3" id="12_452xl"]
 [ext_resource type="AudioStream" uid="uid://cosjk61wdvff3" path="res://assets/SFX/rockhit.mp3" id="13_f2tki"]
 [ext_resource type="FontFile" uid="uid://ljy2lkulst31" path="res://assets/Extra/small_pixel.ttf" id="14_2ewt3"]
