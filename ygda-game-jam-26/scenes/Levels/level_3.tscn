@@ -17,6 +17,7 @@
 [ext_resource type="FontFile" uid="uid://ljy2lkulst31" path="res://assets/Extra/small_pixel.ttf" id="14_jxm41"]
 [ext_resource type="PackedScene" uid="uid://djuncdvgug2jg" path="res://scenes/Buttons/bluebutton.tscn" id="15_3bt0o"]
 [ext_resource type="PackedScene" uid="uid://ob50hk8ful5e" path="res://scenes/Buttons/redbutton.tscn" id="16_3bt0o"]
+[ext_resource type="PackedScene" uid="uid://bveuv64515pyy" path="res://scenes/main_music.tscn" id="18_cu6c6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_14nfc"]
 texture = ExtResource("1_a55e0")
@@ -246,3 +247,5 @@ position = Vector2(-102, -55)
 
 [node name="player" parent="." unique_id=1200693243 instance=ExtResource("14_3fumv")]
 position = Vector2(-115, 112)
+
+[node name="Main Music" parent="." unique_id=816251687 instance=ExtResource("18_cu6c6")]

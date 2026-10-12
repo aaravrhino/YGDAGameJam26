@@ -61,7 +61,9 @@ func _physics_process(delta: float) -> void:
 			var collision = get_slide_collision(i)
 			var collider = collision.get_collider()
 			if collider == spikes_hit:
-				get_tree().reload_current_scene()
+				var tree = get_tree()
+				if tree != null:
+					tree.reload_current_scene()
 	else:
 		animated_sprite.play("in_door")
 	 
