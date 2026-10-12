@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://bjdqu0g0gqgcm" path="res://scripts/door.gd" id="1_j5bs6"]
 [ext_resource type="Texture2D" uid="uid://cv4kidg6j82gk" path="res://assets/Door/pixilart-frames (2)/pixil-frame-1.png" id="2_j5bs6"]
 [ext_resource type="Texture2D" uid="uid://pmhefsj8x2fu" path="res://assets/Door/pixilart-frames (2)/pixil-frame-2.png" id="3_2bwol"]
+[ext_resource type="Texture2D" uid="uid://dih6aqmvoanpi" path="res://assets/Door/pixil-frame-0_33_2.png" id="3_piyrh"]
 [ext_resource type="Texture2D" uid="uid://ckury5qn3h6fi" path="res://assets/Door/pixilart-frames (2)/pixil-frame-3.png" id="4_piyrh"]
 [ext_resource type="Texture2D" uid="uid://c5ri6mm7l8dc4" path="res://assets/Door/pixilart-frames (2)/pixil-frame-4.png" id="5_yjedc"]
 [ext_resource type="Texture2D" uid="uid://d4iroi1t4duf7" path="res://assets/Door/pixilart-frames (2)/pixil-frame-5.png" id="6_qf4ce"]
@@ -40,10 +41,13 @@ animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("1_hac6s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_piyrh")
 }],
 "loop": 1,
 "name": &"idle",
-"speed": 5.0
+"speed": 3.5
 }, {
 "frames": [{
 "duration": 1.0,

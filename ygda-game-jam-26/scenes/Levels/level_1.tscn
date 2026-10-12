@@ -14,6 +14,7 @@
 [ext_resource type="AudioStream" uid="uid://cosjk61wdvff3" path="res://assets/SFX/rockhit.mp3" id="10_j85eu"]
 [ext_resource type="PackedScene" uid="uid://c5ddvfr44g815" path="res://scenes/door.tscn" id="10_ngn3o"]
 [ext_resource type="FontFile" uid="uid://ljy2lkulst31" path="res://assets/Extra/small_pixel.ttf" id="14_iiv34"]
+[ext_resource type="PackedScene" uid="uid://b6e0u2i4t25u3" path="res://scenes/player.tscn" id="15_vtd0g"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_14nfc"]
 texture = ExtResource("1_4p1o3")
@@ -234,3 +235,6 @@ offset_bottom = 95.0
 theme_override_fonts/font = ExtResource("14_iiv34")
 theme_override_font_sizes/font_size = 16
 text = "Level 1"
+
+[node name="player" parent="." unique_id=1200693243 instance=ExtResource("15_vtd0g")]
+position = Vector2(-81, 81)

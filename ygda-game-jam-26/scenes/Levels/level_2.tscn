@@ -14,6 +14,7 @@
 [ext_resource type="AudioStream" uid="uid://boaa8b3ffutje" path="res://assets/SFX/rockslide.mp3" id="12_452xl"]
 [ext_resource type="AudioStream" uid="uid://cosjk61wdvff3" path="res://assets/SFX/rockhit.mp3" id="13_f2tki"]
 [ext_resource type="FontFile" uid="uid://ljy2lkulst31" path="res://assets/Extra/small_pixel.ttf" id="14_2ewt3"]
+[ext_resource type="PackedScene" uid="uid://b6e0u2i4t25u3" path="res://scenes/player.tscn" id="15_e4h20"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_14nfc"]
 texture = ExtResource("1_wxjxf")
@@ -219,6 +220,8 @@ position = Vector2(-130, -56)
 
 [node name="Door" parent="TileMapLayer" unique_id=1464244716 instance=ExtResource("10_ttcij")]
 position = Vector2(-108, 104)
+next_level = "res://scenes/Levels/level_3.tscn"
+button_amount = 2
 
 [node name="rockslide" type="AudioStreamPlayer" parent="TileMapLayer" unique_id=1617724835]
 stream = ExtResource("12_452xl")
@@ -237,3 +240,6 @@ offset_bottom = -16.0
 theme_override_fonts/font = ExtResource("14_2ewt3")
 theme_override_font_sizes/font_size = 16
 text = "Level 2"
+
+[node name="player" parent="." unique_id=1200693243 instance=ExtResource("15_e4h20")]
+position = Vector2(-41, 32)
