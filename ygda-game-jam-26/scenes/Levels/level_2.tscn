@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://cha1ekc7wfgp4" path="res://assets/Tile Sets/Smooth_blocks.png" id="6_410d2"]
 [ext_resource type="Texture2D" uid="uid://r3qpmwph3vvs" path="res://assets/Tile Sets/Brickssmooth_blocks_update.png" id="7_6qxha"]
 [ext_resource type="Texture2D" uid="uid://b4tpb7vyfl06w" path="res://assets/Tile Sets/Middle_blocks_color_correction.png" id="8_4i6gi"]
-[ext_resource type="Script" uid="uid://jyu3dt66xnyu" path="res://scripts/level_2.gd" id="9_wxjxf"]
+[ext_resource type="Script" uid="uid://jyu3dt66xnyu" path="res://scripts/Level Scripts/level_2.gd" id="9_wxjxf"]
 [ext_resource type="PackedScene" uid="uid://c5ddvfr44g815" path="res://scenes/door.tscn" id="10_ttcij"]
 [ext_resource type="PackedScene" uid="uid://djuncdvgug2jg" path="res://scenes/bluebutton.tscn" id="11_rbuvs"]
 [ext_resource type="AudioStream" uid="uid://boaa8b3ffutje" path="res://assets/SFX/rockslide.mp3" id="12_452xl"]
