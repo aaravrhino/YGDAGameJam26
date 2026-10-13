@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bn08mt3djog4w"]
 
-[ext_resource type="Script" uid="uid://cgaoddgqahnd1" path="res://scenes/endingtext.gd" id="1_0kh04"]
+[ext_resource type="Script" uid="uid://cgaoddgqahnd1" path="res://scripts/endingtext.gd" id="1_0kh04"]
 [ext_resource type="FontFile" uid="uid://ljy2lkulst31" path="res://assets/Extra/small_pixel.ttf" id="2_34yv1"]
 [ext_resource type="AudioStream" uid="uid://badvu5pqb2xd8" path="res://assets/Music/Level.mp3" id="3_34yv1"]
 
