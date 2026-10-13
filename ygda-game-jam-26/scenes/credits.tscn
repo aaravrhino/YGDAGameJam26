@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b5a0ckra2dk4j"]
 
 [ext_resource type="Texture2D" uid="uid://bdstpf4o0s0jw" path="res://assets/Main Menu/2026_10_12_0mb_Kleki.png" id="1_2ckv8"]
-[ext_resource type="Script" uid="uid://41fhlfitiqvd" path="res://scripts/credits.gd" id="1_2fbfq"]
+[ext_resource type="Script" uid="uid://41fhlfitiqvd" path="res://scripts/credit.gd" id="1_2fbfq"]
 [ext_resource type="FontFile" uid="uid://ljy2lkulst31" path="res://assets/Extra/small_pixel.ttf" id="2_0ctdu"]
 [ext_resource type="Texture2D" uid="uid://bu2pjc03l12uy" path="res://assets/LevelButtons/untitled@4x.png" id="4_8gwij"]
 
@@ -55,13 +55,13 @@ coolfemawsome - music
 label_settings = SubResource("LabelSettings_v4hcl")
 horizontal_alignment = 1
 
-[node name="TextureButton" type="TextureButton" parent="." unique_id=1320234610]
+[node name="credits_button" type="TextureButton" parent="." unique_id=1320234610]
 layout_mode = 0
-offset_left = 42.0
-offset_top = 963.0
-offset_right = 298.0
-offset_bottom = 1219.0
+offset_left = 32.0
+offset_top = 967.0
+offset_right = 288.0
+offset_bottom = 1223.0
 scale = Vector2(0.3, 0.3)
 texture_normal = ExtResource("4_8gwij")
 
-[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="credits_button" to="." method="_on_credits_button_pressed"]
