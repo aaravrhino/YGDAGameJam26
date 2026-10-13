@@ -9,9 +9,10 @@ var in_air: bool = false
 @onready var walk_sfx: AudioStreamPlayer = $metalWalking
 @onready var jump_sfx: AudioStreamPlayer = $jumpsound
 @onready var floorhit_sfx: AudioStreamPlayer = $floorhit
+@onready var spikes_hit: TileMapLayer = $"../TileMapLayer/Spikes"
 
 func _ready() -> void:
-	Spin.active_level = get_node("../Level 1")
+	Spin.active_level = get_parent()
 
 func _physics_process(delta: float) -> void:
 	if not Spin.in_door:
@@ -22,13 +23,15 @@ func _physics_process(delta: float) -> void:
 			in_air = true
 		if in_air and is_on_floor():
 			in_air = false
-			floorhit_sfx.play()
+			if Level2Buttons.sound_on:
+				floorhit_sfx.play()
 			
 
 		# Handle jump.
 		if Input.is_action_just_pressed("action_jump") and is_on_floor():
 			velocity.y = JUMP_VELOCITY
-			jump_sfx.play()
+			if Level2Buttons.sound_on:
+				jump_sfx.play()
 
 		# Get the input direction and handle the movement/deceleration.
 		# As good practice, you should replace UI actions with custom gameplay actions.
@@ -56,11 +59,20 @@ func _physics_process(delta: float) -> void:
 			velocity.x = move_toward(velocity.x, 0, SPEED)
 
 		move_and_slide()
+		for i in get_slide_collision_count():
+			var collision = get_slide_collision(i)
+			var collider = collision.get_collider()
+			if collider == spikes_hit:
+				var tree = get_tree()
+				if tree != null:
+					tree.reload_current_scene()
 	else:
 		animated_sprite.play("in_door")
+	 
+	
 
 
 func _on_animated_sprite_2d_frame_changed() -> void:
-	if animated_sprite.animation == "run":
+	if animated_sprite.animation == "run" and not walk_sfx.playing and Level2Buttons.sound_on:
 		walk_sfx.pitch_scale = randf_range(0.85, 1.15)
 		walk_sfx.play()

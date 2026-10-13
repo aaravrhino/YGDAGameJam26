@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dx3fxgrfbwa24"]
+
+[ext_resource type="Texture2D" uid="uid://bqyrfajey05ev" path="res://assets/Tile Sets/Spike.png" id="1_xbcdo"]
+[ext_resource type="Texture2D" uid="uid://ccgty68i8jprr" path="res://assets/Tile Sets/Spike_rust.png" id="2_bflj7"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kd5gq"]
+texture = ExtResource("1_xbcdo")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-3.2327824, -7.0234823, -1.0564919, -7.122405, -1.2543373, 0.49461174, 1.7133312, -6.5288706, 3.1971664, 2.374136, 5.0766907, -5.3418036, 6.857292, -1.4838333, 8, 8, -8, 8, -8, -0.395689, -5.409073, -4.2536583)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0vi4p"]
+texture = ExtResource("2_bflj7")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-3.2327824, -7.0234823, -1.0564919, -7.122405, -1.2543373, 0.49461174, 1.7133312, -6.5288706, 3.1971664, 2.374136, 5.0766907, -5.3418036, 6.857292, -1.4838333, 8, 8, -8, 8, -8, -0.395689, -5.409073, -4.2536583)
+
+[sub_resource type="TileSet" id="TileSet_hs6it"]
+physics_layer_0/collision_layer = 2
+physics_layer_0/collision_mask = 2
+sources/0 = SubResource("TileSetAtlasSource_kd5gq")
+sources/1 = SubResource("TileSetAtlasSource_0vi4p")
+
+[sub_resource type="GDScript" id="GDScript_w4mxr"]
+script/source = "extends TileMapLayer
+
+func _on_spikes_tree_entered():
+	get_tree().reload_current_scene()
+"
+
+[node name="Spikes" type="TileMapLayer" unique_id=723641993]
+tile_set = SubResource("TileSet_hs6it")
+script = SubResource("GDScript_w4mxr")

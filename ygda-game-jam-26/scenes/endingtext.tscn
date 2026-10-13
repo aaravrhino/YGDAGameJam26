@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://bn08mt3djog4w"]
+
+[ext_resource type="Script" uid="uid://cgaoddgqahnd1" path="res://scripts/endingtext.gd" id="1_0kh04"]
+[ext_resource type="FontFile" uid="uid://ljy2lkulst31" path="res://assets/Extra/small_pixel.ttf" id="2_34yv1"]
+[ext_resource type="AudioStream" uid="uid://badvu5pqb2xd8" path="res://assets/Music/Level.mp3" id="3_34yv1"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_twr6n"]
+line_spacing = 0.0
+font_size = 72
+
+[node name="Ending" type="Control" unique_id=1538565720]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_0kh04")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=14944619]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="." unique_id=201062863]
+layout_mode = 0
+offset_left = 81.0
+offset_top = 136.0
+offset_right = 1840.0
+offset_bottom = 928.0
+theme_override_fonts/font = ExtResource("2_34yv1")
+theme_override_font_sizes/font_size = 64
+text = "Congratulations! You escaped the
+factory and made it to the showcase on
+time! you've showed your team that they
+can depend on you and are now ready to
+become the most renowned engineers in
+the industrial revolution!"
+label_settings = SubResource("LabelSettings_twr6n")
+
+[node name="endmusic" type="AudioStreamPlayer" parent="." unique_id=1530336793]
+stream = ExtResource("3_34yv1")
+volume_db = -10.0

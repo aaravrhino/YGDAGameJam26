@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bveuv64515pyy"]
+
+[ext_resource type="AudioStream" uid="uid://bx3w7of3atmj5" path="res://assets/Music/Revolvelution.mp3" id="1_3i6y5"]
+[ext_resource type="Script" uid="uid://csonu5hdyuky3" path="res://scripts/main_music.gd" id="1_k6dxv"]
+
+[node name="Main Music" type="AudioStreamPlayer" unique_id=816251687]
+stream = ExtResource("1_3i6y5")
+script = ExtResource("1_k6dxv")
+
+[node name="Timer" type="Timer" parent="." unique_id=1697659765]
+wait_time = 0.1

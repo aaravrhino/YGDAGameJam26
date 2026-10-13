@@ -1,0 +1,184 @@
+[gd_scene format=3 uid="uid://d1e0woy2nmm37"]
+
+[ext_resource type="Script" uid="uid://b8isc6msosaxe" path="res://scripts/settings.gd" id="1_uhhto"]
+[ext_resource type="Texture2D" uid="uid://bdstpf4o0s0jw" path="res://assets/Main Menu/2026_10_12_0mb_Kleki.png" id="2_1g033"]
+[ext_resource type="Texture2D" uid="uid://dh5603f0baqhw" path="res://assets/LevelButtons/pixil-frame-0 (1).png" id="3_1g033"]
+[ext_resource type="Texture2D" uid="uid://cqjs64groy4cj" path="res://assets/LevelButtons/1.png" id="3_oe2nd"]
+[ext_resource type="Texture2D" uid="uid://c4ua5c58ijvdj" path="res://assets/LevelButtons/pixil-frame-0 (2).png" id="4_01roj"]
+[ext_resource type="Texture2D" uid="uid://5ky4hsjb66rp" path="res://assets/LevelButtons/pixil-frame-0 (3).png" id="5_wqwn7"]
+[ext_resource type="Texture2D" uid="uid://cv8nnpc31uk5i" path="res://assets/LevelButtons/pixil-frame-0 (4).png" id="6_oe2nd"]
+[ext_resource type="Texture2D" uid="uid://cnsj8gm03vtg6" path="res://assets/LevelButtons/pixil-frame-0 (5).png" id="7_7kvyq"]
+[ext_resource type="Texture2D" uid="uid://rafiu87gnyc8" path="res://assets/LevelButtons/pixil-frame-0 (6).png" id="8_ql1j0"]
+[ext_resource type="Texture2D" uid="uid://bcm8pdobk6mmy" path="res://assets/LevelButtons/pixil-frame-0 (7).png" id="9_6dbjw"]
+[ext_resource type="Texture2D" uid="uid://dfj0tnn7v1l4a" path="res://assets/LevelButtons/pixil-frame-0 (8).png" id="10_g5y2q"]
+[ext_resource type="Texture2D" uid="uid://d0n1ybu66wup5" path="res://assets/LevelButtons/pixil-frame-0 (9).png" id="11_k00b3"]
+[ext_resource type="FontFile" uid="uid://ljy2lkulst31" path="res://assets/Extra/small_pixel.ttf" id="13_01roj"]
+[ext_resource type="Texture2D" uid="uid://bu2pjc03l12uy" path="res://assets/LevelButtons/untitled@4x.png" id="13_oe2nd"]
+[ext_resource type="Texture2D" uid="uid://vbop58d0t667" path="res://assets/LevelButtons/pixil-frame-0_1.png" id="14_oe2nd"]
+
+[node name="Settings" type="Control" unique_id=87659376]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_uhhto")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=683320924]
+layout_mode = 0
+offset_top = 2.0
+offset_right = 300.0
+offset_bottom = 202.0
+scale = Vector2(6.408833, 5.3859186)
+texture = ExtResource("2_1g033")
+
+[node name="1" type="TextureButton" parent="." unique_id=289914591]
+layout_mode = 0
+offset_left = 63.0
+offset_top = 601.0
+offset_right = 127.0
+offset_bottom = 665.0
+scale = Vector2(1.5, 1.5)
+texture_normal = ExtResource("3_oe2nd")
+
+[node name="2" type="TextureButton" parent="." unique_id=1883907486]
+layout_mode = 0
+offset_left = 187.0
+offset_top = 603.0
+offset_right = 251.0
+offset_bottom = 667.0
+scale = Vector2(1.5, 1.5)
+texture_normal = ExtResource("3_1g033")
+
+[node name="3" type="TextureButton" parent="." unique_id=1713603707]
+layout_mode = 0
+offset_left = 309.0
+offset_top = 605.0
+offset_right = 373.0
+offset_bottom = 669.0
+scale = Vector2(1.5, 1.5)
+texture_normal = ExtResource("4_01roj")
+
+[node name="4" type="TextureButton" parent="." unique_id=1748979478]
+layout_mode = 0
+offset_left = 431.0
+offset_top = 603.0
+offset_right = 495.0
+offset_bottom = 667.0
+scale = Vector2(1.5, 1.5)
+texture_normal = ExtResource("5_wqwn7")
+
+[node name="5" type="TextureButton" parent="." unique_id=102068461]
+layout_mode = 0
+offset_left = 551.0
+offset_top = 603.0
+offset_right = 615.0
+offset_bottom = 667.0
+scale = Vector2(1.5, 1.5)
+texture_normal = ExtResource("6_oe2nd")
+
+[node name="6" type="TextureButton" parent="." unique_id=1488178760]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 767.0
+offset_right = 128.0
+offset_bottom = 831.0
+scale = Vector2(1.5, 1.5)
+texture_normal = ExtResource("7_7kvyq")
+
+[node name="7" type="TextureButton" parent="." unique_id=1366182800]
+layout_mode = 0
+offset_left = 186.0
+offset_top = 766.0
+offset_right = 250.0
+offset_bottom = 830.0
+scale = Vector2(1.5, 1.5)
+texture_normal = ExtResource("8_ql1j0")
+
+[node name="8" type="TextureButton" parent="." unique_id=684962774]
+layout_mode = 0
+offset_left = 309.0
+offset_top = 770.0
+offset_right = 373.0
+offset_bottom = 834.0
+scale = Vector2(1.5, 1.5)
+texture_normal = ExtResource("9_6dbjw")
+
+[node name="9" type="TextureButton" parent="." unique_id=1720668708]
+layout_mode = 0
+offset_left = 432.0
+offset_top = 771.00006
+offset_right = 496.0
+offset_bottom = 835.00006
+scale = Vector2(1.5, 1.5)
+texture_normal = ExtResource("10_g5y2q")
+
+[node name="10" type="TextureButton" parent="." unique_id=906877720]
+layout_mode = 0
+offset_left = 548.0
+offset_top = 772.0
+offset_right = 612.0
+offset_bottom = 836.0
+scale = Vector2(1.5, 1.5)
+texture_normal = ExtResource("11_k00b3")
+
+[node name="Back" type="TextureButton" parent="." unique_id=198014657]
+layout_mode = 0
+offset_left = 43.0
+offset_top = 962.0
+offset_right = 299.0
+offset_bottom = 1218.0
+scale = Vector2(0.3, 0.3)
+texture_normal = ExtResource("13_oe2nd")
+
+[node name="Music" type="TextureButton" parent="." unique_id=573182509]
+custom_maximum_size = Vector2(64, 64)
+layout_mode = 0
+offset_left = 280.00003
+offset_top = 399.0
+offset_right = 1797.0
+offset_bottom = 1456.0
+scale = Vector2(1.5, 1.5)
+texture_normal = ExtResource("14_oe2nd")
+
+[node name="Label" type="Label" parent="." unique_id=598169123]
+layout_mode = 0
+offset_left = 82.0
+offset_top = 171.0
+offset_right = 770.0
+offset_bottom = 299.0
+theme_override_fonts/font = ExtResource("13_01roj")
+theme_override_font_sizes/font_size = 128
+text = "Settings"
+
+[node name="Label2" type="Label" parent="." unique_id=1390244994]
+layout_mode = 0
+offset_left = 169.0
+offset_top = 525.0
+offset_right = 857.0
+offset_bottom = 653.0
+theme_override_fonts/font = ExtResource("13_01roj")
+theme_override_font_sizes/font_size = 48
+text = "Level Select"
+
+[node name="Label3" type="Label" parent="." unique_id=81031539]
+layout_mode = 0
+offset_left = 251.0
+offset_top = 324.0
+offset_right = 939.0
+offset_bottom = 452.0
+theme_override_fonts/font = ExtResource("13_01roj")
+theme_override_font_sizes/font_size = 48
+text = "Sound"
+
+[connection signal="pressed" from="1" to="." method="_on_1_pressed"]
+[connection signal="pressed" from="2" to="." method="_on_2_pressed"]
+[connection signal="pressed" from="3" to="." method="_on_3_pressed"]
+[connection signal="pressed" from="4" to="." method="_on_4_pressed"]
+[connection signal="pressed" from="5" to="." method="_on_5_pressed"]
+[connection signal="pressed" from="6" to="." method="_on_6_pressed"]
+[connection signal="pressed" from="7" to="." method="_on_7_pressed"]
+[connection signal="pressed" from="8" to="." method="_on_8_pressed"]
+[connection signal="pressed" from="9" to="." method="_on_9_pressed"]
+[connection signal="pressed" from="10" to="." method="_on_10_pressed"]
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="Music" to="." method="_on_music_pressed"]

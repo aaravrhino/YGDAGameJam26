@@ -23,11 +23,13 @@ func rotate_level() -> void:
 		return
 
 	is_rotating = true
-	slide_sfx.play()
+	if Level2Buttons.sound_on:
+		slide_sfx.play()
 
 	for rotations in 45:
 		rotation += deg_to_rad(2)
 		await get_tree().create_timer(0.0001).timeout
 
 	is_rotating = false
-	hit_sfx.play()
+	if Level2Buttons.sound_on:
+		hit_sfx.play()

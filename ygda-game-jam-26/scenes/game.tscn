@@ -1,15 +1,7 @@
 [gd_scene format=3 uid="uid://0hvw5gv8vv4w"]
 
-[ext_resource type="PackedScene" uid="uid://cn8dj32v117le" path="res://scenes/Levels/level_1.tscn" id="1_yqjtg"]
-[ext_resource type="PackedScene" uid="uid://b8360uvyqxhnh" path="res://scenes/Levels/level_2.tscn" id="2_lnu2h"]
-[ext_resource type="PackedScene" uid="uid://b6e0u2i4t25u3" path="res://scenes/player.tscn" id="2_yqjtg"]
+[ext_resource type="PackedScene" uid="uid://dnn0ih7k2i3eh" path="res://scenes/main_menu.tscn" id="1_uwrxv"]
 
 [node name="game" type="Node2D" unique_id=1353156351]
 
-[node name="Level 1" parent="." unique_id=1680909377 instance=ExtResource("1_yqjtg")]
-position = Vector2(-1167, -996)
-
-[node name="Level 2" parent="." unique_id=350410363 instance=ExtResource("2_lnu2h")]
-
-[node name="player" parent="." unique_id=1200693243 instance=ExtResource("2_yqjtg")]
-position = Vector2(-1251, -915)
+[node name="Control" parent="." unique_id=1278612928 instance=ExtResource("1_uwrxv")]

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ob50hk8ful5e"]
 
-[ext_resource type="Script" uid="uid://ba2mwjc6yjskr" path="res://scripts/redbutton.gd" id="1_c11d0"]
+[ext_resource type="Script" uid="uid://ba2mwjc6yjskr" path="res://scripts/Button Scripts/redbutton.gd" id="1_c11d0"]
 [ext_resource type="Texture2D" uid="uid://cx2rq8cb6mven" path="res://assets/Interactables/Buttons/pixil-frame-2.png" id="2_c11d0"]
 [ext_resource type="Texture2D" uid="uid://dp7eemiwdhfxa" path="res://assets/Interactables/Buttons/pixil-frame-3.png" id="3_yq8na"]
 [ext_resource type="AudioStream" uid="uid://cosjk61wdvff3" path="res://assets/SFX/rockhit.mp3" id="4_05yma"]

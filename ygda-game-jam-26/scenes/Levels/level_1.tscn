@@ -10,10 +10,13 @@
 [ext_resource type="Texture2D" uid="uid://b4tpb7vyfl06w" path="res://assets/Tile Sets/Middle_blocks_color_correction.png" id="6_fcfvj"]
 [ext_resource type="Script" uid="uid://cri0x14rqdnim" path="res://scripts/Level Scripts/level_1.gd" id="8_15mv3"]
 [ext_resource type="AudioStream" uid="uid://boaa8b3ffutje" path="res://assets/SFX/rockslide.mp3" id="9_xxpsm"]
-[ext_resource type="PackedScene" uid="uid://djuncdvgug2jg" path="res://scenes/bluebutton.tscn" id="10_14nfc"]
+[ext_resource type="PackedScene" uid="uid://dx3fxgrfbwa24" path="res://scenes/spikes.tscn" id="10_5gowt"]
+[ext_resource type="PackedScene" uid="uid://djuncdvgug2jg" path="res://scenes/Buttons/bluebutton.tscn" id="10_14nfc"]
 [ext_resource type="AudioStream" uid="uid://cosjk61wdvff3" path="res://assets/SFX/rockhit.mp3" id="10_j85eu"]
 [ext_resource type="PackedScene" uid="uid://c5ddvfr44g815" path="res://scenes/door.tscn" id="10_ngn3o"]
 [ext_resource type="FontFile" uid="uid://ljy2lkulst31" path="res://assets/Extra/small_pixel.ttf" id="14_iiv34"]
+[ext_resource type="PackedScene" uid="uid://b6e0u2i4t25u3" path="res://scenes/player.tscn" id="15_vtd0g"]
+[ext_resource type="PackedScene" uid="uid://bveuv64515pyy" path="res://scenes/main_music.tscn" id="16_hk2jt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_14nfc"]
 texture = ExtResource("1_4p1o3")
@@ -211,8 +214,12 @@ tile_map_data = PackedByteArray("AAD5//n/AwAAAAIAAAAGAPn/AQABAAAAAAAGAAYAAQABAAE
 tile_set = SubResource("TileSet_tv3bi")
 script = ExtResource("8_15mv3")
 
+[node name="Spikes" parent="TileMapLayer" unique_id=723641993 instance=ExtResource("10_5gowt")]
+
 [node name="Door" parent="TileMapLayer" unique_id=1464244716 instance=ExtResource("10_ngn3o")]
 position = Vector2(69, 69)
+red_button_amount = 0
+green_button_amount = 0
 
 [node name="Blue Button" parent="TileMapLayer" unique_id=386486553 instance=ExtResource("10_14nfc")]
 position = Vector2(-81, -46)
@@ -234,3 +241,18 @@ offset_bottom = 95.0
 theme_override_fonts/font = ExtResource("14_iiv34")
 theme_override_font_sizes/font_size = 16
 text = "Level 1"
+
+[node name="Label2" type="Label" parent="TileMapLayer" unique_id=1833039766]
+offset_left = -73.0
+offset_top = -51.0
+offset_right = -9.0
+offset_bottom = -28.0
+theme_override_fonts/font = ExtResource("14_iiv34")
+theme_override_font_sizes/font_size = 8
+text = " <- Press"
+
+[node name="player" parent="." unique_id=1200693243 instance=ExtResource("15_vtd0g")]
+position = Vector2(-81, 81)
+
+[node name="Main Music" parent="." unique_id=816251687 instance=ExtResource("16_hk2jt")]
+volume_db = -15.0

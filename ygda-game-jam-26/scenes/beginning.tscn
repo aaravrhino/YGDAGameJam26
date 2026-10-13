@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://cjawiyqefujh6"]
+
+[ext_resource type="Script" uid="uid://be4m7wngiiesv" path="res://scripts/beginning.gd" id="1_b0ks7"]
+[ext_resource type="FontFile" uid="uid://ljy2lkulst31" path="res://assets/Extra/small_pixel.ttf" id="2_f15ue"]
+[ext_resource type="AudioStream" uid="uid://bx3w7of3atmj5" path="res://assets/Music/Revolvelution.mp3" id="3_f15ue"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_twr6n"]
+line_spacing = 0.0
+font_size = 63
+
+[node name="beginning" type="Control" unique_id=1538565720]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_b0ks7")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=14944619]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="." unique_id=201062863]
+layout_mode = 0
+offset_left = 55.0
+offset_top = 51.0
+offset_right = 1814.0
+offset_bottom = 1081.0
+theme_override_fonts/font = ExtResource("2_f15ue")
+theme_override_font_sizes/font_size = 64
+text = "At the height of the Industrial Revolution,
+you and a team of engineers have been
+racing to build the best train in order to
+show the world your skills. However, you just
+woke up to find that your team has already
+left for the showcase, and you are now locked
+in the Factory! You must escape and make it to
+that showcase in Time!"
+label_settings = SubResource("LabelSettings_twr6n")
+
+[node name="musicbegin" type="AudioStreamPlayer" parent="." unique_id=164824514]
+stream = ExtResource("3_f15ue")
+volume_db = -15.0

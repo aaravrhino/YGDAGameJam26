@@ -1,0 +1,109 @@
+[gd_scene format=3 uid="uid://dnn0ih7k2i3eh"]
+
+[ext_resource type="Script" uid="uid://crel4kswipb4n" path="res://scripts/menubuttons.gd" id="1_jk1qb"]
+[ext_resource type="Texture2D" uid="uid://bdstpf4o0s0jw" path="res://assets/Main Menu/2026_10_12_0mb_Kleki.png" id="1_rtw2f"]
+[ext_resource type="Texture2D" uid="uid://8megjbnmf5p1" path="res://assets/Main Menu/A_font.png" id="2_oa1go"]
+[ext_resource type="Texture2D" uid="uid://cdrmkwc0bl1p4" path="res://assets/Main Menu/O_font.png" id="3_tbmy8"]
+[ext_resource type="Texture2D" uid="uid://conuqn4gokj45" path="res://assets/Main Menu/R_font.png" id="4_jk1qb"]
+[ext_resource type="Texture2D" uid="uid://cfv8pbefvsa0y" path="res://assets/Main Menu/T_font.png" id="5_5dd4i"]
+[ext_resource type="Texture2D" uid="uid://f8lh0ps3syer" path="res://assets/Main Menu/Y_font.png" id="6_lgwnu"]
+[ext_resource type="Texture2D" uid="uid://dk3cjy2qnhx5r" path="res://assets/Main Menu/2026_10_12_0nl_Kleki.png" id="7_jk1qb"]
+[ext_resource type="Texture2D" uid="uid://b1q2vjlsn1kos" path="res://assets/Main Menu/Play_highlight.png" id="7_rcqid"]
+[ext_resource type="Texture2D" uid="uid://do2tu3vpvcm1p" path="res://assets/Main Menu/2026_10_12_0nz_Kleki.png" id="8_5dd4i"]
+[ext_resource type="Texture2D" uid="uid://c4wwiyfd1ucxh" path="res://assets/Main Menu/2026_10_12_0nz_Kleki_2.png" id="9_lgwnu"]
+[ext_resource type="Texture2D" uid="uid://cx3ijeqvl0xpn" path="res://assets/Main Menu/Credits_highlight.png" id="10_7b55j"]
+[ext_resource type="Texture2D" uid="uid://b5dqc4fbwqtk1" path="res://assets/Main Menu/Settings_highlight.png" id="12_5pajh"]
+[ext_resource type="AudioStream" uid="uid://badvu5pqb2xd8" path="res://assets/Music/Level.mp3" id="14_7b55j"]
+
+[node name="Control" type="Control" unique_id=1278612928]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_jk1qb")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=638282604]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 2.0
+offset_right = 1916.0
+offset_bottom = 1086.0
+texture = ExtResource("1_rtw2f")
+
+[node name="A" type="Sprite2D" parent="." unique_id=845341642]
+position = Vector2(532, 190)
+scale = Vector2(4.3124995, 4.3124995)
+texture = ExtResource("2_oa1go")
+
+[node name="O" type="Sprite2D" parent="." unique_id=1421344487]
+position = Vector2(273, 192)
+scale = Vector2(4.3124995, 4.3124995)
+texture = ExtResource("3_tbmy8")
+
+[node name="O2" type="Sprite2D" parent="." unique_id=1343674007]
+position = Vector2(825, 187.00002)
+scale = Vector2(4.3124995, 4.3124995)
+texture = ExtResource("3_tbmy8")
+
+[node name="R" type="Sprite2D" parent="." unique_id=1043202298]
+position = Vector2(130, 187.00002)
+scale = Vector2(4.3124995, 4.3124995)
+texture = ExtResource("4_jk1qb")
+
+[node name="R2" type="Sprite2D" parent="." unique_id=652692605]
+position = Vector2(973, 193.0001)
+scale = Vector2(4.3124995, 4.3124995)
+texture = ExtResource("4_jk1qb")
+
+[node name="T" type="Sprite2D" parent="." unique_id=1852759020]
+position = Vector2(680, 195.00002)
+scale = Vector2(4.3124995, 4.3124995)
+texture = ExtResource("5_5dd4i")
+
+[node name="T2" type="Sprite2D" parent="." unique_id=1878909458]
+position = Vector2(404.00003, 190)
+scale = Vector2(4.3124995, 4.3124995)
+texture = ExtResource("5_5dd4i")
+
+[node name="Y" type="Sprite2D" parent="." unique_id=1919642915]
+position = Vector2(1106, 199.00008)
+scale = Vector2(4.3124995, 4.3124995)
+texture = ExtResource("6_lgwnu")
+
+[node name="Play" type="TextureButton" parent="." unique_id=1186508926]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 276.0
+offset_right = 256.0
+offset_bottom = 340.0
+scale = Vector2(6, 6)
+texture_normal = ExtResource("7_jk1qb")
+texture_hover = ExtResource("7_rcqid")
+
+[node name="Settings" type="TextureButton" parent="." unique_id=1061368272]
+layout_mode = 0
+offset_left = 94.0
+offset_top = 572.0
+offset_right = 158.0
+offset_bottom = 636.0
+scale = Vector2(5, 5)
+texture_normal = ExtResource("9_lgwnu")
+texture_hover = ExtResource("12_5pajh")
+
+[node name="Credits" type="TextureButton" parent="." unique_id=958469842]
+layout_mode = 0
+offset_left = 362.0
+offset_top = 572.0
+offset_right = 426.0
+offset_bottom = 636.0
+scale = Vector2(5, 5)
+texture_normal = ExtResource("8_5dd4i")
+texture_hover = ExtResource("10_7b55j")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1354731291]
+stream = ExtResource("14_7b55j")
+volume_db = -10.0
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="Credits" to="." method="_on_credits_pressed"]

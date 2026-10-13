@@ -9,11 +9,14 @@
 [ext_resource type="Texture2D" uid="uid://r3qpmwph3vvs" path="res://assets/Tile Sets/Brickssmooth_blocks_update.png" id="7_6qxha"]
 [ext_resource type="Texture2D" uid="uid://b4tpb7vyfl06w" path="res://assets/Tile Sets/Middle_blocks_color_correction.png" id="8_4i6gi"]
 [ext_resource type="Script" uid="uid://jyu3dt66xnyu" path="res://scripts/Level Scripts/level_2.gd" id="9_wxjxf"]
+[ext_resource type="PackedScene" uid="uid://dx3fxgrfbwa24" path="res://scenes/spikes.tscn" id="10_2hpwu"]
 [ext_resource type="PackedScene" uid="uid://c5ddvfr44g815" path="res://scenes/door.tscn" id="10_ttcij"]
-[ext_resource type="PackedScene" uid="uid://djuncdvgug2jg" path="res://scenes/bluebutton.tscn" id="11_rbuvs"]
+[ext_resource type="PackedScene" uid="uid://djuncdvgug2jg" path="res://scenes/Buttons/bluebutton.tscn" id="11_rbuvs"]
 [ext_resource type="AudioStream" uid="uid://boaa8b3ffutje" path="res://assets/SFX/rockslide.mp3" id="12_452xl"]
 [ext_resource type="AudioStream" uid="uid://cosjk61wdvff3" path="res://assets/SFX/rockhit.mp3" id="13_f2tki"]
 [ext_resource type="FontFile" uid="uid://ljy2lkulst31" path="res://assets/Extra/small_pixel.ttf" id="14_2ewt3"]
+[ext_resource type="PackedScene" uid="uid://b6e0u2i4t25u3" path="res://scenes/player.tscn" id="15_e4h20"]
+[ext_resource type="PackedScene" uid="uid://bveuv64515pyy" path="res://scenes/main_music.tscn" id="17_0lf7e"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_14nfc"]
 texture = ExtResource("1_wxjxf")
@@ -211,6 +214,8 @@ tile_map_data = PackedByteArray("AAD2//b/AQAAAAAAAAAJAPb/AQABAAIAAAAJAAkAAwABAAE
 tile_set = SubResource("TileSet_tv3bi")
 script = ExtResource("9_wxjxf")
 
+[node name="Spikes" parent="TileMapLayer" unique_id=723641993 instance=ExtResource("10_2hpwu")]
+
 [node name="Blue Button" parent="TileMapLayer" unique_id=1290052436 instance=ExtResource("11_rbuvs")]
 position = Vector2(-32, -106)
 
@@ -219,6 +224,10 @@ position = Vector2(-130, -56)
 
 [node name="Door" parent="TileMapLayer" unique_id=1464244716 instance=ExtResource("10_ttcij")]
 position = Vector2(-108, 104)
+next_level = "res://scenes/Levels/level_3.tscn"
+blue_button_amount = 2
+red_button_amount = 0
+green_button_amount = 0
 
 [node name="rockslide" type="AudioStreamPlayer" parent="TileMapLayer" unique_id=1617724835]
 stream = ExtResource("12_452xl")
@@ -237,3 +246,19 @@ offset_bottom = -16.0
 theme_override_fonts/font = ExtResource("14_2ewt3")
 theme_override_font_sizes/font_size = 16
 text = "Level 2"
+
+[node name="Label2" type="Label" parent="TileMapLayer" unique_id=771591809]
+offset_left = -119.0
+offset_top = -71.0
+offset_right = -43.0
+offset_bottom = -48.0
+rotation = -0.46207467
+theme_override_fonts/font = ExtResource("14_2ewt3")
+theme_override_font_sizes/font_size = 8
+text = "<- Press Both ->
+"
+
+[node name="player" parent="." unique_id=1200693243 instance=ExtResource("15_e4h20")]
+position = Vector2(-41, 32)
+
+[node name="Main Music" parent="." unique_id=816251687 instance=ExtResource("17_0lf7e")]
