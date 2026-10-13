@@ -13,7 +13,7 @@ config_version=5
 config/name="YGDAGameJam26"
 run/main_scene="res://scenes/game.tscn"
 config/features=PackedStringArray("4.7", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="uid://conuqn4gokj45"
 
 [autoload]
 
