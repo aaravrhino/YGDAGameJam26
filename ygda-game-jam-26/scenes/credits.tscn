@@ -41,16 +41,16 @@ label_settings = SubResource("LabelSettings_a1nxj")
 layout_mode = 0
 offset_left = 44.0
 offset_top = 228.0
-offset_right = 1108.0
-offset_bottom = 828.0
-text = "Aarav Dwivedi - programmer
-Henry Lipitz -  programmer
+offset_right = 1143.0
+offset_bottom = 962.0
+text = "aarav0613 - programmer
+HTVA4322 -  programmer
 
-Emmalee Foltz - artist
-Jonathan Agar - artist
+emmalee - artist
+Jonny - artist
 
-Ramsey Catanzano - SFX
-Olufemi Oni - music
+scienceisprettycool - SFX
+coolfemawsome - music
 "
 label_settings = SubResource("LabelSettings_v4hcl")
 horizontal_alignment = 1
