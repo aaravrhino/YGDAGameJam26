@@ -203,6 +203,10 @@ sources/7 = SubResource("TileSetAtlasSource_fcfvj")
 sources/9 = SubResource("TileSetAtlasSource_2y5yt")
 sources/10 = SubResource("TileSetAtlasSource_2os1m")
 
+[sub_resource type="LabelSettings" id="LabelSettings_0xpud"]
+font = ExtResource("14_3yunr")
+font_size = 12
+
 [node name="Level4" type="Node2D" unique_id=1680909377]
 
 [node name="TileMapLayer2" type="TileMapLayer" parent="." unique_id=1559811856]
@@ -253,6 +257,16 @@ offset_bottom = 172.0
 theme_override_fonts/font = ExtResource("14_3yunr")
 theme_override_font_sizes/font_size = 16
 text = "Level 4"
+
+[node name="Label2" type="Label" parent="TileMapLayer" unique_id=1176222309]
+offset_left = 75.0
+offset_top = 164.0
+offset_right = 189.0
+offset_bottom = 187.0
+theme_override_fonts/font = ExtResource("14_3yunr")
+theme_override_font_sizes/font_size = 16
+text = "Click R to Reset"
+label_settings = SubResource("LabelSettings_0xpud")
 
 [node name="player" parent="." unique_id=1200693243 instance=ExtResource("15_35g73")]
 position = Vector2(154, 207)
