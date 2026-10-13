@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b5a0ckra2dk4j"]
 
 [ext_resource type="Texture2D" uid="uid://bdstpf4o0s0jw" path="res://assets/Main Menu/2026_10_12_0mb_Kleki.png" id="1_2ckv8"]
-[ext_resource type="Script" uid="uid://41fhlfitiqvd" path="res://scenes/credits.gd" id="1_2fbfq"]
+[ext_resource type="Script" uid="uid://41fhlfitiqvd" path="res://scripts/credits.gd" id="1_2fbfq"]
 [ext_resource type="FontFile" uid="uid://ljy2lkulst31" path="res://assets/Extra/small_pixel.ttf" id="2_0ctdu"]
 [ext_resource type="Texture2D" uid="uid://bu2pjc03l12uy" path="res://assets/LevelButtons/untitled@4x.png" id="4_8gwij"]
 
