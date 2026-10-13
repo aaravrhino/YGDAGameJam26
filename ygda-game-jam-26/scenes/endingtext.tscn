@@ -5,7 +5,7 @@
 [ext_resource type="AudioStream" uid="uid://badvu5pqb2xd8" path="res://assets/Music/Level.mp3" id="3_34yv1"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_twr6n"]
-line_spacing = 50.0
+line_spacing = 0.0
 font_size = 72
 
 [node name="Ending" type="Control" unique_id=1538565720]
@@ -23,10 +23,10 @@ color = Color(0, 0, 0, 1)
 
 [node name="Label" type="Label" parent="." unique_id=201062863]
 layout_mode = 0
-offset_left = 94.0
-offset_top = 151.0
-offset_right = 1853.0
-offset_bottom = 943.0
+offset_left = 81.0
+offset_top = 136.0
+offset_right = 1840.0
+offset_bottom = 928.0
 theme_override_fonts/font = ExtResource("2_34yv1")
 theme_override_font_sizes/font_size = 64
 text = "Congratulations! You escaped the
