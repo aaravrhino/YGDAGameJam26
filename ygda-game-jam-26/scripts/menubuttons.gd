@@ -14,7 +14,7 @@ func _on_settings_pressed() -> void:
 
 func _on_play_pressed() -> void:
 	player.stop()
-	get_tree().change_scene_to_file("res://scenes/Levels/level_1.tscn")
+	get_tree().change_scene_to_file("res://scenes/beginning.tscn")
 
 func _on_credits_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/credits.tscn")
