@@ -5,7 +5,7 @@
 [ext_resource type="AudioStream" uid="uid://bx3w7of3atmj5" path="res://assets/Music/Revolvelution.mp3" id="3_f15ue"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_twr6n"]
-line_spacing = 40.0
+line_spacing = 0.0
 font_size = 63
 
 [node name="beginning" type="Control" unique_id=1538565720]
@@ -23,10 +23,10 @@ color = Color(0, 0, 0, 1)
 
 [node name="Label" type="Label" parent="." unique_id=201062863]
 layout_mode = 0
-offset_left = 78.0
-offset_top = 123.0
-offset_right = 1837.0
-offset_bottom = 915.0
+offset_left = 55.0
+offset_top = 51.0
+offset_right = 1814.0
+offset_bottom = 1081.0
 theme_override_fonts/font = ExtResource("2_f15ue")
 theme_override_font_sizes/font_size = 64
 text = "At the height of the Industrial Revolution,
